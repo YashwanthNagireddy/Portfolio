@@ -6,7 +6,7 @@ Hi, I'm **Nagireddy Yashwanth Reddy**, a Computer Science Engineering student pa
 ---
 
 ## 🚀 Live Demo
-👉 [http://127.0.0.1:5500/]  
+👉 [https://yashwanthnagireddy.github.io/Portfolio/]  
 
 ---
 
