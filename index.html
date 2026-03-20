@@ -8,64 +8,54 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+
   <body>
+    <!-- NAVBAR -->
     <nav id="desktop-nav">
       <div class="logo">Nagireddy Yashwanth Reddy</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Nagireddy Yashwanth Reddy</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+    <!-- PROFILE -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/bunny.png" alt="Nagireddy Yashwanth Reddy profile picture" />
+        <img src="./assets/bunny.png" alt="profile" />
       </div>
+
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <p>Hello, I'm</p>
         <h1 class="title">Nagireddy Yashwanth Reddy</h1>
-        <p class="section__text__p2">AI Developer | CSE Student</p>
+        <p class="section__text__p2">
+          AI Developer | Full Stack Enthusiast | CSE Student
+        </p>
+
         <div class="btn-container">
+          <!-- ✅ FIXED -->
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/NAGIREDDY YASHWANTH REDDY RESUME.pdf')"
+            onclick="window.open('./assets/resume.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
+
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324'"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/YashwanthNagireddy'"
           />
@@ -73,385 +63,125 @@
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
+
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/bunny.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>AI Developer <br />Python & Backend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech in Computer Science Engineering<br />ICFAI, 2027</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am a Computer Science Engineering student at ICFAI with a CGPA of 7.63.
-              I have worked as an AI Developer at VISWAM.AI, Hyderabad, where I used
-              Python for data processing, backend logic, debugging, optimization, and
-              collaborative development. I am interested in full-stack development,
-              problem solving, and building practical software projects.
-            </p>
-          </div>
+        <img src="./assets/bunny.png" class="about-pic" />
+
+        <div class="text-container">
+          <p>
+            Motivated Computer Science Engineering student (CGPA: 7.63) with
+            hands-on experience in Python, AI applications, and web development.
+            Worked as an AI Developer at VISWAM.AI, Hyderabad, contributing to
+            backend logic, debugging, and performance optimization.
+          </p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
 
+    <!-- SKILLS -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
+
+          <!-- Programming & Web -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Programming & Web Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+            <h2>Programming & Web</h2>
+
+            <p>Python</p>
+            <p>Java</p>
+            <p>C++</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React</p>
           </div>
 
+          <!-- Database & Tools -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Database, Tools & Core Concepts</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitHub</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OOPS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DBMS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Networks</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+            <h2>Database & Tools</h2>
+
+            <p>SQL</p>
+            <p>MongoDB</p>
+            <p>GitHub</p>
+            <p>Streamlit</p>
           </div>
+
+          <!-- Core Concepts -->
+          <div class="details-container">
+            <h2>Core Concepts</h2>
+
+            <p>OOPS</p>
+            <p>DBMS</p>
+            <p>Operating Systems</p>
+            <p>Computer Networks</p>
+          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Student Management System"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Student Management System</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/YashwanthNagireddy'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+      <div class="about-containers">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Voice Assistant"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Voice Assistant</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/YashwanthNagireddy'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Portfolio Website"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/YashwanthNagireddy'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
+        <div class="details-container">
+          <h2>Student Management System</h2>
+          <p>
+            Built using Python, Tkinter, and MySQL with full CRUD operations
+            for managing student data efficiently.
+          </p>
         </div>
+
+        <div class="details-container">
+          <h2>Voice Assistant</h2>
+          <p>
+            Developed a Python-based assistant using speech recognition to
+            perform tasks like search and automation.
+          </p>
+        </div>
+
+        <div class="details-container">
+          <h2>Portfolio Website</h2>
+          <p>
+            Created a responsive portfolio using HTML, CSS, and JavaScript.
+            Deployed on GitHub Pages.
+          </p>
+        </div>
+
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:yashwanthnagireddy12@gmail.com">yashwanthnagireddy12@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324">LinkedIn</a></p>
-        </div>
-      </div>
+      <h1 class="title">Contact</h1>
+
+      <p>Email: yashwanthnagireddy12@gmail.com</p>
+
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324">
+          Click Here
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/YashwanthNagireddy">
+          Click Here
+        </a>
+      </p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2026 Nagireddy Yashwanth Reddy. All Rights Reserved.</p>
+      <p>© 2026 Nagireddy Yashwanth Reddy</p>
     </footer>
 
     <script src="script.js"></script>
