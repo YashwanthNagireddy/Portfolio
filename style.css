@@ -1,7 +1,7 @@
 /* ===========================
    GOOGLE FONT
 =========================== */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 /* ===========================
    GENERAL
@@ -54,12 +54,12 @@ section{
   margin-bottom:40px;
   word-break:break-word;
   line-height:1.2;
+  font-weight: 700;
 }
 
 /* ===========================
    NAVBAR
 =========================== */
-
 nav,
 .nav-links{
   display:flex;
@@ -85,7 +85,6 @@ nav{
 /* ===========================
    PROFILE
 =========================== */
-
 #profile{
   display:flex;
   align-items:center;
@@ -124,6 +123,7 @@ nav{
   border:2px solid black;
   transition:.3s;
   font-size:15px;
+  font-weight: 600;
 }
 
 .btn-color-1{
@@ -161,9 +161,8 @@ nav{
 }
 
 /* ===========================
-   ABOUT
+   ABOUT & SKILLS CONTAINERS
 =========================== */
-
 #about{
   text-align:center;
 }
@@ -184,10 +183,6 @@ nav{
 .text-container{
   max-width:600px;
 }
-
-/* ===========================
-   SKILLS & EXPERIENCE
-=========================== */
 
 .about-containers{
   display:flex;
@@ -212,6 +207,7 @@ nav{
 
 .details-container h2{
   margin-bottom:15px;
+  font-weight: 700;
 }
 
 .details-container p{
@@ -219,9 +215,193 @@ nav{
 }
 
 /* ===========================
-   CONTACT
+   PROJECTS SECTION (New Layout)
 =========================== */
+#projects {
+  text-align: left;
+}
 
+/* 3-Column Desktop Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Equal Height Cards */
+.project-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px;
+  text-align: left;
+  height: 100%;
+}
+
+/* Project Images */
+.project-img {
+  width: 100%;
+  height: 200px; /* Forces all images to exactly same height */
+  object-fit: cover; /* Crops cleanly if aspect ratios differ */
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+}
+
+/* Typography Hierarchy */
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700; /* Bold */
+  margin-bottom: 12px;
+  color: #111;
+  line-height: 1.3;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  font-weight: 400; /* Medium/Regular */
+  margin-bottom: 20px !important;
+  color: #444;
+  line-height: 1.6;
+  height: 3em; /* Limits to ~2 lines visually */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Features */
+.feature-title {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important; /* Semi-Bold */
+  margin-bottom: 10px !important;
+  color: #222;
+}
+
+.feature-list {
+  list-style: none;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.feature-list li {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.feature-list li::before {
+  content: "✔";
+  color: #111;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Technology Badges */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.tech-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600; /* Medium-Bold Badges */
+  color: #fff;
+}
+
+/* Custom Colorful Tech Colors */
+.tech-java { background-color: #f89820; color: #fff;}
+.tech-opencv { background-color: #5c6bc0; color: #fff;}
+.tech-python { background-color: #3776ab; color: #fff;}
+.tech-tkinter { background-color: #d33682; color: #fff;}
+.tech-mysql { background-color: #00758f; color: #fff;}
+.tech-react { background-color: #61dafb; color: #000; }
+.tech-nextjs { background-color: #000000; color: #fff;}
+.tech-tailwind { background-color: #38b2ac; color: #fff;}
+.tech-js { background-color: #f7df1e; color: #000; }
+
+/* Sticky Bottom Buttons */
+.project-btn-container {
+  display: flex;
+  gap: 12px;
+  margin-top: auto; /* Magically pushes buttons to absolute bottom */
+  padding-top: 10px;
+}
+
+.btn-small {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  flex: 1; /* Makes buttons even width if possible */
+  text-align: center;
+}
+
+/* ===========================
+   CERTIFICATIONS (Single Line Grid)
+=========================== */
+#certifications {
+  text-align: center;
+}
+
+/* 5 Column Desktop Grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 25px 20px;
+  height: 100%; /* Equal Height */
+}
+
+.cert-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.cert-title {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+  color: #111;
+  line-height: 1.4;
+}
+
+.issuer {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 20px !important;
+}
+
+.cert-btn {
+  margin-top: auto; /* Bottom align */
+  width: 100%;
+}
+
+/* ===========================
+   CONTACT & FOOTER
+=========================== */
 #contact {
   text-align: center;
 }
@@ -250,10 +430,6 @@ nav{
   height: 32px;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
-
 footer {
   padding: 25px 8%;
   text-align: center;
@@ -263,198 +439,37 @@ footer p {
   font-size: 0.95rem;
 }
 
-/* Utility */
-
-body {
-  overflow-x: hidden;
+/* ===========================
+   RESPONSIVE MEDIA QUERIES
+=========================== */
+@media screen and (max-width: 1100px) {
+  /* Tablet / Smaller Desktop */
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+  .cert-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 top, 2 bottom */
+  }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.title {
-  word-break: break-word;
-  line-height: 1.2;
-}
-
-.section__text__p2 {
-  color: #555;
-}
-
-/* Smooth Hover */
-
-.icon:hover {
-  transform: scale(1.1);
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.details-container:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-#education {
-  text-align:center;
-}
-
-#education .details-container {
-  margin:auto;
-}
-
-
-/* =========================================
-   NEW UPGRADED PORTFOLIO SECTIONS (ATS & PRODUCT COMPANY FOCUSED)
-========================================= */
-
-/* Projects Flex Grid */
-#projects {
-  text-align: left;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Project Cards Structure */
-.project-card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 30px;
-  text-align: left;
-}
-
-.project-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #111;
-  text-align: left;
-}
-
-.project-desc {
-  font-size: 0.95rem;
-  margin-bottom: 20px !important;
-  color: #444;
-}
-
-/* Key Features (Checkmarks) */
-.project-features h3, .project-tech h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.feature-list {
-  list-style: none;
-  margin-bottom: 20px;
-  padding: 0;
-}
-
-.feature-list li {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 6px;
-  position: relative;
-  padding-left: 24px;
-}
-
-.feature-list li::before {
-  content: "✔";
-  color: #111;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* Technology Badges */
-.tech-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.tech-chip {
-  background: #e5e5e5;
-  color: #111;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 1px solid #ccc;
-}
-
-/* Project Buttons */
-.project-btn-container {
-  display: flex;
-  gap: 12px;
-  margin-top: auto; /* Pushes buttons to bottom for equal heights */
-  padding-top: 10px;
-}
-
-.btn-small {
-  padding: 10px 20px;
-  font-size: 13px;
-}
-
-
-/* Certifications Flex Grid */
-#certifications {
-  text-align: center;
-}
-
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Certification Cards */
-.cert-card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
-}
-
-.cert-icon {
-  font-size: 3.5rem;
-  margin-bottom: 15px;
-}
-
-.cert-card h2 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #111;
-}
-
-.issuer {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #555;
-  margin-bottom: 20px !important;
-}
-
-.cert-btn {
-  margin-top: auto;
-  width: 100%;
+@media screen and (max-width: 768px) {
+  /* Mobile Devices */
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+  .cert-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-container {
+    flex-direction: column;
+  }
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
 }
