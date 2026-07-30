@@ -42,8 +42,7 @@
       <h1 class="title">Nagireddy Yashwanth Reddy</h1>
       <p class="section__text__p2">Software Engineer Aspirant | Java Developer | AI Enthusiast</p>
       <div class="btn-container">
-        <!-- Note: Consider renaming 'resume portfolio.pdf' to 'resume_portfolio.pdf' to avoid space issues in URLs -->
-        <button class="btn btn-color-2" onclick="window.open('assets/resume portfolio.pdf')">
+        <button class="btn btn-color-2" onclick="window.open('assets/resume_portfolio.pdf')">
           Download CV
         </button>
         <button class="btn btn-color-1" onclick="location.href='#contact'">
@@ -51,8 +50,8 @@
         </button>
       </div>
       <div id="socials-container">
-        <img src="assets/linkedin.png" class="icon" alt="LinkedIn Profile" onclick="location.href='https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324'">
-        <img src="assets/github.png" class="icon" alt="GitHub Profile" onclick="location.href='https://github.com/YashwanthNagireddy'">
+        <img src="assets/linkedin.png" class="icon" alt="LinkedIn Profile" onclick="window.open('https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324', '_blank')">
+        <img src="assets/github.png" class="icon" alt="GitHub Profile" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">
       </div>
     </div>
   </section>
@@ -60,14 +59,13 @@
   <!-- ABOUT SECTION -->
   <section id="about">
     <h1 class="title">About Me</h1>
-    <div class="section-container about-enhanced">
-      <div class="text-container about-content">
+    <div class="section-container">
+      <img src="assets/bunny.png" class="about-pic" alt="About Yashwanth">
+      <div class="text-container">
         <p>
-          I am a driven <strong>Computer Science Engineering student</strong> (CGPA: 7.76) with hands-on experience in <strong>Java, Python, AI applications,</strong> and <strong>full-stack development</strong>. 
-        </p>
-        <br>
-        <p>
-          Recently, I worked as an <strong>AI Developer Intern at VISWAM.AI</strong> in Hyderabad, where I built AI-based solutions and scalable web applications. I am passionate about leveraging technology to solve real-world problems and am constantly learning new tools to improve my craft.
+          Computer Science Engineering student (CGPA: 7.76) with experience in Java,
+          Python, AI applications, and full-stack development. Worked as an AI Developer
+          Intern at VISWAM.AI, Hyderabad, building AI-based solutions and web applications.
         </p>
       </div>
     </div>
@@ -129,44 +127,133 @@
   <section id="projects">
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
-      <div class="about-containers">
+      <div class="project-grid">
         
-        <!-- PROJECT 1 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="assets/project-1.png" class="project-img" alt="Student Management System">
+        <!-- PROJECT 1: Interactive Wall Calendar -->
+        <div class="details-container color-container project-card">
+          <h2 class="experience-sub-title project-title">Interactive Wall Calendar</h2>
+          <p class="project-desc">
+            Developed a modern and responsive interactive wall calendar application with smooth month and year navigation, delivering an intuitive user experience with a visually appealing interface.
+          </p>
+          
+          <div class="project-features">
+            <h3>Key Features:</h3>
+            <ul class="feature-list">
+              <li>Interactive monthly calendar view</li>
+              <li>Previous and next month navigation</li>
+              <li>Current date highlighting</li>
+              <li>Responsive design for desktop, tablet, and mobile</li>
+              <li>Clean and modern UI with smooth user experience</li>
+            </ul>
           </div>
+
+          <div class="project-tech">
+            <h3>Technologies Used:</h3>
+            <div class="tech-badges">
+              <span class="tech-chip">React.js</span>
+              <span class="tech-chip">Next.js</span>
+              <span class="tech-chip">Tailwind CSS</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-btn-container">
+            <button class="btn btn-color-2 btn-small" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">GitHub</button>
+            <button class="btn btn-color-1 btn-small" onclick="window.open('https://wall-calendar-bg1pqvqna-yashwanthnagireddy12-6118s-projects.vercel.app/', '_blank')">Live Demo</button>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Student Management System -->
+        <div class="details-container color-container project-card">
           <h2 class="experience-sub-title project-title">Student Management System</h2>
-          <p>
-            Developed a desktop-based Student Management System using Python,
-            Tkinter, and MySQL with complete CRUD operations for efficient
-            student record management.
+          <p class="project-desc">
+            Developed a desktop-based Student Management System using Python and MySQL with complete CRUD operations for efficient student record management.
           </p>
+          
+          <div class="project-features">
+            <h3>Key Features:</h3>
+            <ul class="feature-list">
+              <li>Complete Create, Read, Update, Delete (CRUD)</li>
+              <li>Efficient and secure student record storage</li>
+              <li>Intuitive desktop Graphical User Interface</li>
+              <li>Seamless database connectivity and queries</li>
+            </ul>
+          </div>
+
+          <div class="project-tech">
+            <h3>Technologies Used:</h3>
+            <div class="tech-badges">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Tkinter</span>
+              <span class="tech-chip">MySQL</span>
+            </div>
+          </div>
+
+          <div class="project-btn-container">
+            <button class="btn btn-color-2 btn-small" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">GitHub</button>
+          </div>
         </div>
 
-        <!-- PROJECT 2 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="assets/drowsiness.png" class="project-img" alt="Driver Drowsiness Detection">
-          </div>
-          <h2 class="experience-sub-title project-title">Driver Drowsiness Detection System</h2>
-          <p>
-            Developed a real-time driver drowsiness detection system using Java
-            and OpenCV with face and eye detection, monitoring driver alertness
-            and generating audio alerts.
+        <!-- PROJECT 3: Driver Drowsiness Detection -->
+        <div class="details-container color-container project-card">
+          <h2 class="experience-sub-title project-title">Driver Drowsiness Detection</h2>
+          <p class="project-desc">
+            Developed a real-time driver drowsiness detection system using Java and OpenCV, monitoring driver alertness and generating immediate audio alerts.
           </p>
+          
+          <div class="project-features">
+            <h3>Key Features:</h3>
+            <ul class="feature-list">
+              <li>Real-time video feed monitoring</li>
+              <li>Accurate face and eye detection tracking</li>
+              <li>Automated audio alert generation for safety</li>
+              <li>Low-latency image processing pipeline</li>
+            </ul>
+          </div>
+
+          <div class="project-tech">
+            <h3>Technologies Used:</h3>
+            <div class="tech-badges">
+              <span class="tech-chip">Java</span>
+              <span class="tech-chip">OpenCV</span>
+            </div>
+          </div>
+
+          <div class="project-btn-container">
+            <button class="btn btn-color-2 btn-small" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">GitHub</button>
+          </div>
         </div>
 
-        <!-- PROJECT 3 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="assets/project3.png" class="project-img" alt="Portfolio Website">
-          </div>
+        <!-- PROJECT 4: Portfolio Website -->
+        <div class="details-container color-container project-card">
           <h2 class="experience-sub-title project-title">Portfolio Website</h2>
-          <p>
-            Designed and developed a responsive personal portfolio website using
-            HTML, CSS, and JavaScript to showcase skills, projects and experience.
+          <p class="project-desc">
+            Designed and developed a responsive personal portfolio website to showcase my skills, projects, and professional experience to recruiters.
           </p>
+          
+          <div class="project-features">
+            <h3>Key Features:</h3>
+            <ul class="feature-list">
+              <li>Fully responsive design for all devices</li>
+              <li>Modern UI/UX with smooth scrolling</li>
+              <li>ATS-friendly professional layout</li>
+              <li>Optimized asset loading and performance</li>
+            </ul>
+          </div>
+
+          <div class="project-tech">
+            <h3>Technologies Used:</h3>
+            <div class="tech-badges">
+              <span class="tech-chip">HTML</span>
+              <span class="tech-chip">CSS</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-btn-container">
+            <button class="btn btn-color-2 btn-small" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">GitHub</button>
+            <button class="btn btn-color-1 btn-small" onclick="location.href='#'">Live Demo</button>
+          </div>
         </div>
 
       </div>
@@ -191,17 +278,6 @@
           </p>
         </div>
 
-        <div class="details-container">
-          <h2>Volunteer Intern</h2>
-          <h3>Pledge A Smile Foundation</h3>
-          <p>2024</p>
-          <br>
-          <p>
-            Participated in community outreach activities and supported
-            social impact initiatives through volunteer work.
-          </p>
-        </div>
-
       </div>
     </div>
   </section>
@@ -210,16 +286,41 @@
   <section id="certifications">
     <h1 class="title">Certifications</h1>
     <div class="experience-details-container">
-      <div class="about-containers">
+      <div class="cert-grid">
         
-        <div class="details-container">
-          <h2>AWS Cloud Practitioner</h2>
-          <p>Amazon Web Services</p>
+        <div class="details-container cert-card">
+          <div class="cert-icon">☁️</div>
+          <h2>AWS Certified Cloud Practitioner</h2>
+          <p class="issuer">Amazon Web Services</p>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
         </div>
 
-        <div class="details-container">
-          <h2>Microsoft Azure AI Fundamentals</h2>
-          <p>Microsoft</p>
+        <div class="details-container cert-card">
+          <div class="cert-icon">🤖</div>
+          <h2>Microsoft Azure AI Fundamentals (AI-900)</h2>
+          <p class="issuer">Microsoft</p>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
+        </div>
+
+        <div class="details-container cert-card">
+          <div class="cert-icon">📊</div>
+          <h2>NASSCOM – Acquiring Data</h2>
+          <p class="issuer">NASSCOM</p>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
+        </div>
+
+        <div class="details-container cert-card">
+          <div class="cert-icon">📈</div>
+          <h2>NASSCOM – Exploratory Data Analysis</h2>
+          <p class="issuer">NASSCOM</p>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
+        </div>
+
+        <div class="details-container cert-card">
+          <div class="cert-icon">📉</div>
+          <h2>NASSCOM – Data Processing and Visualization</h2>
+          <p class="issuer">NASSCOM</p>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
         </div>
 
       </div>
