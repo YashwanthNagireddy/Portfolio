@@ -19,6 +19,14 @@
       flex: 1;
       min-width: 200px;
     }
+    /* Ensures link tags look exactly like buttons */
+    a.btn {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -56,12 +64,8 @@
       <h1 class="title">Nagireddy Yashwanth Reddy</h1>
       <p class="section__text__p2">Software Engineer Aspirant | Java Developer | AI Enthusiast</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('assets/resume_portfolio.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='#contact'">
-          Contact Info
-        </button>
+        <a href="./assets/resume_portfolio.pdf" target="_blank" class="btn btn-color-2">Download CV</a>
+        <a href="#contact" class="btn btn-color-1">Contact Info</a>
       </div>
       <div id="socials-container">
         <img src="assets/linkedin.png" class="icon" alt="LinkedIn Profile" onclick="window.open('https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324', '_blank')">
@@ -185,7 +189,7 @@
           </div>
 
           <div class="project-btn-container">
-            <button class="btn btn-color-2 btn-small" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">GitHub</button>
+            <a href="https://github.com/YashwanthNagireddy" target="_blank" class="btn btn-color-2 btn-small">GitHub</a>
           </div>
         </div>
 
@@ -216,7 +220,7 @@
           </div>
 
           <div class="project-btn-container">
-            <button class="btn btn-color-2 btn-small" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">GitHub</button>
+            <a href="https://github.com/YashwanthNagireddy" target="_blank" class="btn btn-color-2 btn-small">GitHub</a>
           </div>
         </div>
         
@@ -248,8 +252,8 @@
           </div>
 
           <div class="project-btn-container">
-            <button class="btn btn-color-2 btn-small" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">GitHub</button>
-            <button class="btn btn-color-1 btn-small" onclick="window.open('https://wall-calendar-bg1pqvqna-yashwanthnagireddy12-6118s-projects.vercel.app/', '_blank')">Live Demo</button>
+            <a href="https://github.com/YashwanthNagireddy" target="_blank" class="btn btn-color-2 btn-small">GitHub</a>
+            <a href="https://wall-calendar-bg1pqvqna-yashwanthnagireddy12-6118s-projects.vercel.app/" target="_blank" class="btn btn-color-1 btn-small">Live Demo</a>
           </div>
         </div>
 
@@ -263,7 +267,6 @@
     <div class="experience-details-container">
       <div class="experience-grid single-card-center">
         
-        <!-- Only AI Developer Intern as requested -->
         <div class="details-container exp-card">
           <h2 class="exp-title">AI Developer Intern</h2>
           <h3 class="exp-company">VISWAM.AI | Hyderabad</h3>
@@ -273,9 +276,9 @@
             <li>Contributed to application development and data processing tasks.</li>
             <li>Improved understanding of AI applications and software development practices.</li>
           </ul>
-          <!-- Added Viswam certificate link -->
+          <!-- Fixed relative path for Viswam certificate -->
           <div style="margin-top: 15px;">
-            <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('viswamdpa.pdf', '_blank')">View Certificate</button>
+            <a href="./assets/viswamdpa.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
           </div>
         </div>
 
@@ -293,30 +296,32 @@
           <div class="cert-icon">☁️</div>
           <h2 class="cert-title">AWS Certified Cloud Practitioner</h2>
           <p class="issuer">Amazon Web Services</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('aws certification.pdf', '_blank')">View Certificate</button>
+          <!-- Fixed relative path and URL-encoded space -->
+          <a href="./assets/aws%20certification.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
         </div>
-
-        <!-- AI 900 Removed -->
 
         <div class="details-container cert-card">
           <div class="cert-icon">📊</div>
           <h2 class="cert-title">NASSCOM – Acquiring Data</h2>
           <p class="issuer">NASSCOM</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('ad.pdf', '_blank')">View Certificate</button>
+          <!-- Fixed relative path -->
+          <a href="./assets/ad.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
         </div>
 
         <div class="details-container cert-card">
           <div class="cert-icon">📈</div>
           <h2 class="cert-title">NASSCOM – Exploratory Data Analysis</h2>
           <p class="issuer">NASSCOM</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('eda.pdf', '_blank')">View Certificate</button>
+          <!-- Fixed relative path -->
+          <a href="./assets/eda.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
         </div>
 
         <div class="details-container cert-card">
           <div class="cert-icon">📉</div>
           <h2 class="cert-title">NASSCOM – Data Processing and Visualization</h2>
           <p class="issuer">NASSCOM</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('dpa.pdf', '_blank')">View Certificate</button>
+          <!-- Fixed relative path -->
+          <a href="./assets/dpa.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
         </div>
 
       </div>
