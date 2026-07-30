@@ -9,189 +9,251 @@
 </head>
 <body>
 
-  <!-- FLOATING PILL NAVIGATION -->
-  <nav id="navbar">
-    <div class="logo">Yash<span class="highlight">.</span></div>
-    
-    <div class="hamburger-icon" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+<!-- UNIFIED NAVIGATION -->
+<nav id="navbar">
+  <div class="logo">Yashwanth Reddy</div>
+  
+  <!-- Hamburger Icon (Hidden on Desktop) -->
+  <div class="hamburger-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-    <ul class="nav-links">
-      <li><a href="#about" onclick="closeMenu()">About</a></li>
-      <li><a href="#education" onclick="closeMenu()">Education</a></li>
-      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-      <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-      <li><a href="#contact" onclick="closeMenu()" class="nav-btn">Let's Talk</a></li>
-    </ul>
-  </nav>
+  <!-- Single Nav Links List -->
+  <ul class="nav-links">
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#education" onclick="closeMenu()">Education</a></li>
+    <li><a href="#experience" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#work-experience" onclick="closeMenu()">Experience</a></li>
+    <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- PROFILE SECTION BOX -->
-  <section id="profile" class="section-box">
-    <div class="section__pic-container" data-tilt data-tilt-max="10" data-tilt-speed="400">
-      <div class="img-glow"></div>
-      <img src="assets/bunny1.png" alt="Profile Picture" class="floating-img">
+  <!-- PROFILE SECTION -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/bunny1.png" alt="Profile Picture of Yashwanth">
     </div>
     <div class="section__text">
-      <p class="greeting">👋 Hello, I'm</p>
+      <p>Hello, I'm</p>
       <h1 class="title">Nagireddy Yashwanth Reddy</h1>
       <p class="section__text__p2">Software Engineer Aspirant | Java Developer | AI Enthusiast</p>
       <div class="btn-container">
-        <button class="btn btn-outline" onclick="window.open('assets/resume_portfolio.pdf')">
+        <!-- Note: Consider renaming 'resume portfolio.pdf' to 'resume_portfolio.pdf' to avoid space issues in URLs -->
+        <button class="btn btn-color-2" onclick="window.open('assets/resume portfolio.pdf')">
           Download CV
         </button>
-        <button class="btn btn-filled" onclick="location.href='#contact'">
-          Contact Me
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
         </button>
       </div>
       <div id="socials-container">
-        <img src="assets/linkedin.png" class="icon" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324', '_blank')">
-        <img src="assets/github.png" class="icon" alt="GitHub" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">
+        <img src="assets/linkedin.png" class="icon" alt="LinkedIn Profile" onclick="location.href='https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324'">
+        <img src="assets/github.png" class="icon" alt="GitHub Profile" onclick="location.href='https://github.com/YashwanthNagireddy'">
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION BOX -->
-  <section id="about" class="section-box">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-enhanced">
-      <div class="about-card" data-tilt data-tilt-max="3" data-tilt-speed="400">
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <img src="assets/bunny.png" class="about-pic" alt="About Yashwanth">
+      <div class="text-container">
         <p>
-          I am a driven <span class="highlight-text">Computer Science Engineering student</span> (CGPA: 7.76) with hands-on experience in <strong>Java, Python, AI applications,</strong> and full-stack development.
+          Computer Science Engineering student (CGPA: 7.76) with experience in Java,
+          Python, AI applications, and full-stack development. Worked as an AI Developer
+          Intern at VISWAM.AI, Hyderabad, building AI-based solutions and web applications.
         </p>
-        <p>
-          Recently, I worked as an <span class="highlight-text">AI Developer Intern at VISWAM.AI</span>, where I built AI-based solutions and scalable web applications. I am passionate about leveraging technology to solve real-world problems and am constantly learning new tools to improve my craft.
-        </p>
       </div>
     </div>
   </section>
 
-  <!-- EDUCATION SECTION BOX -->
-  <section id="education" class="section-box">
-    <h2 class="section-title">Education</h2>
-    <div class="grid-container centered-grid">
-      <div class="card ed-card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-        <div class="card-icon gradient-text">🎓</div>
-        <h3>Bachelor of Technology</h3>
-        <p class="subtitle">Computer Science Engineering</p>
-        <p>ICFAI Foundation for Higher Education, Hyderabad</p>
-        <div class="card-footer">
-          <span class="badge">CGPA: 7.76</span>
-          <span class="badge">Graduation: 2027</span>
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <h1 class="title">Education</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2>Bachelor of Technology</h2>
+          <p>Computer Science Engineering</p>
+          <p>ICFAI Foundation for Higher Education, Hyderabad</p>
+          <p><strong>CGPA:</strong> 7.76</p>
+          <p><strong>Expected Graduation:</strong> 2027</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS SECTION BOX -->
-  <section id="skills" class="section-box">
-    <h2 class="section-title">My Skills</h2>
-    <div class="grid-container">
-      <div class="card skill-card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-        <h3 class="gradient-text">💻 Programming & Web</h3>
-        <div class="skill-tags tag-color-1">
-          <span>Java</span><span>Python</span><span>C++</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Next.js</span>
+  <!-- SKILLS SECTION -->
+  <section id="experience">
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2>Programming & Web</h2>
+          <p>Java</p>
+          <p>Python</p>
+          <p>C++</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>React.js</p>
+          <p>Next.js</p>
         </div>
-      </div>
-      <div class="card skill-card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-        <h3 class="gradient-text">🗄️ Database & Tools</h3>
-        <div class="skill-tags tag-color-2">
-          <span>MySQL</span><span>MongoDB</span><span>Git & GitHub</span><span>Streamlit</span><span>AWS</span>
+        <div class="details-container">
+          <h2>Database & Tools</h2>
+          <p>MySQL</p>
+          <p>MongoDB</p>
+          <p>Git & GitHub</p>
+          <p>Streamlit</p>
+          <p>AWS</p>
         </div>
-      </div>
-      <div class="card skill-card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-        <h3 class="gradient-text">🧠 Core Concepts</h3>
-        <div class="skill-tags tag-color-3">
-          <span>Data Structures</span><span>Algorithms</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Networks</span>
+        <div class="details-container">
+          <h2>Core Concepts</h2>
+          <p>Data Structures & Algorithms</p>
+          <p>Object-Oriented Programming</p>
+          <p>DBMS</p>
+          <p>Operating Systems</p>
+          <p>Computer Networks</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS SECTION BOX -->
-  <section id="projects" class="section-box">
-    <h2 class="section-title">Projects</h2>
-    <div class="grid-container">
-      <div class="card project-card" data-tilt data-tilt-max="6" data-tilt-speed="400">
-        <div class="project-img-wrapper">
-          <img src="assets/project-1.png" alt="Student Management System">
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        
+        <!-- PROJECT 1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/project-1.png" class="project-img" alt="Student Management System">
+          </div>
+          <h2 class="experience-sub-title project-title">Student Management System</h2>
+          <p>
+            Developed a desktop-based Student Management System using Python,
+            Tkinter, and MySQL with complete CRUD operations for efficient
+            student record management.
+          </p>
         </div>
-        <h3>Student Management System</h3>
-        <p>Developed a desktop-based Student Management System using Python, Tkinter, and MySQL with complete CRUD operations.</p>
-      </div>
 
-      <div class="card project-card" data-tilt data-tilt-max="6" data-tilt-speed="400">
-        <div class="project-img-wrapper">
-          <img src="assets/drowsiness.png" alt="Driver Drowsiness Detection">
+        <!-- PROJECT 2 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/drowsiness.png" class="project-img" alt="Driver Drowsiness Detection">
+          </div>
+          <h2 class="experience-sub-title project-title">Driver Drowsiness Detection System</h2>
+          <p>
+            Developed a real-time driver drowsiness detection system using Java
+            and OpenCV with face and eye detection, monitoring driver alertness
+            and generating audio alerts.
+          </p>
         </div>
-        <h3>Driver Drowsiness Detection</h3>
-        <p>Real-time system using Java and OpenCV with face and eye detection to monitor driver alertness and generate alerts.</p>
-      </div>
 
-      <div class="card project-card" data-tilt data-tilt-max="6" data-tilt-speed="400">
-        <div class="project-img-wrapper">
-          <img src="assets/project3.png" alt="Portfolio Website">
+        <!-- PROJECT 3 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/project3.png" class="project-img" alt="Portfolio Website">
+          </div>
+          <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+          <p>
+            Designed and developed a responsive personal portfolio website using
+            HTML, CSS, and JavaScript to showcase skills, projects and experience.
+          </p>
         </div>
-        <h3>Portfolio Website</h3>
-        <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase my work.</p>
+
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE & CERTS SECTION BOX -->
-  <section id="experience" class="section-box">
-    <h2 class="section-title">Experience & Certifications</h2>
-    <div class="grid-container">
-      <div class="card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-        <h3>AI Developer Intern</h3>
-        <p class="subtitle">VISWAM.AI | Hyderabad</p>
-        <p class="date-badge">2025</p>
-        <p>Worked on AI-powered applications, contributing to AI model integration, data processing, and application development.</p>
-      </div>
-      <div class="card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-        <h3>Volunteer Intern</h3>
-        <p class="subtitle">Pledge A Smile Foundation</p>
-        <p class="date-badge">2024</p>
-        <p>Participated in community outreach activities and supported social impact initiatives through volunteer work.</p>
-      </div>
-      <div class="card cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-        <div class="card-icon">☁️</div>
-        <h3>AWS Cloud Practitioner</h3>
-        <p>Amazon Web Services</p>
+  <!-- EXPERIENCE SECTION -->
+  <section id="work-experience">
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        
+        <div class="details-container">
+          <h2>AI Developer Intern</h2>
+          <h3>VISWAM.AI | Hyderabad</h3>
+          <p>2025</p>
+          <br>
+          <p>
+            Worked on AI-powered applications and web solutions,
+            contributing to AI model integration, data processing,
+            and application development.
+          </p>
+        </div>
+
+        <div class="details-container">
+          <h2>Volunteer Intern</h2>
+          <h3>Pledge A Smile Foundation</h3>
+          <p>2024</p>
+          <br>
+          <p>
+            Participated in community outreach activities and supported
+            social impact initiatives through volunteer work.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CONTACT SECTION BOX -->
-  <section id="contact" class="section-box">
-    <h2 class="section-title">Let's Connect</h2>
-    <p class="contact-subtitle">I'm always open to discussing tech, AI, or new opportunities.</p>
-    <div class="contact-grid">
-      <a href="mailto:yashwanthnagireddy12@gmail.com" class="contact-card">
-        <div class="icon-circle email-bg"><img src="assets/email.png" alt="Email"></div>
-        <span>Email Me</span>
-      </a>
-      <a href="https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324" target="_blank" class="contact-card">
-        <div class="icon-circle linkedin-bg"><img src="assets/linkedin.png" alt="LinkedIn"></div>
-        <span>LinkedIn</span>
-      </a>
-      <a href="https://github.com/YashwanthNagireddy" target="_blank" class="contact-card">
-        <div class="icon-circle github-bg"><img src="assets/github.png" alt="GitHub"></div>
-        <span>GitHub</span>
-      </a>
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications">
+    <h1 class="title">Certifications</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        
+        <div class="details-container">
+          <h2>AWS Cloud Practitioner</h2>
+          <p>Amazon Web Services</p>
+        </div>
+
+        <div class="details-container">
+          <h2>Microsoft Azure AI Fundamentals</h2>
+          <p>Microsoft</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h1 class="title">Contact</h1>
+    <div class="contact-info-upper-container">
+      
+      <div class="contact-info-container">
+        <img src="assets/email.png" class="icon contact-icon email-icon" alt="Email Icon">
+        <p><a href="mailto:yashwanthnagireddy12@gmail.com">yashwanthnagireddy12@gmail.com</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="assets/linkedin.png" class="icon contact-icon" alt="LinkedIn Icon">
+        <p><a href="https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="assets/github.png" class="icon contact-icon" alt="GitHub Icon">
+        <p><a href="https://github.com/YashwanthNagireddy" target="_blank">GitHub</a></p>
+      </div>
+
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Nagireddy Yashwanth Reddy. Built with passion.</p>
+    <p>© 2026 Nagireddy Yashwanth Reddy. All Rights Reserved.</p>
   </footer>
 
-  <!-- 3D TILT SCRIPT -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
