@@ -186,7 +186,7 @@ nav{
 }
 
 /* ===========================
-   SKILLS
+   SKILLS & EXPERIENCE
 =========================== */
 
 .about-containers{
@@ -219,33 +219,8 @@ nav{
 }
 
 /* ===========================
-   PROJECTS
+   CONTACT
 =========================== */
-
-#projects{
-  text-align:center;
-}
-
-.color-container{
-  background:#fafafa;
-}
-
-.article-container{
-  width:100%;
-}
-
-.project-img{
-  width:100%;
-  aspect-ratio:16/9;
-  object-fit:cover;
-  border-radius:15px;
-}
-
-.project-title{
-  margin-top:20px;
-  margin-bottom:10px;
-}
-/* Contact */
 
 #contact {
   text-align: center;
@@ -275,7 +250,9 @@ nav{
   height: 32px;
 }
 
-/* Footer */
+/* ===========================
+   FOOTER
+=========================== */
 
 footer {
   padding: 25px 8%;
@@ -320,7 +297,6 @@ img {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-/* Education */
 
 #education {
   text-align:center;
@@ -328,4 +304,157 @@ img {
 
 #education .details-container {
   margin:auto;
+}
+
+
+/* =========================================
+   NEW UPGRADED PORTFOLIO SECTIONS (ATS & PRODUCT COMPANY FOCUSED)
+========================================= */
+
+/* Projects Flex Grid */
+#projects {
+  text-align: left;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project Cards Structure */
+.project-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111;
+  text-align: left;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  margin-bottom: 20px !important;
+  color: #444;
+}
+
+/* Key Features (Checkmarks) */
+.project-features h3, .project-tech h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.feature-list {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.feature-list li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.feature-list li::before {
+  content: "✔";
+  color: #111;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Technology Badges */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-chip {
+  background: #e5e5e5;
+  color: #111;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #ccc;
+}
+
+/* Project Buttons */
+.project-btn-container {
+  display: flex;
+  gap: 12px;
+  margin-top: auto; /* Pushes buttons to bottom for equal heights */
+  padding-top: 10px;
+}
+
+.btn-small {
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+
+/* Certifications Flex Grid */
+#certifications {
+  text-align: center;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Certification Cards */
+.cert-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.cert-icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.cert-card h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.issuer {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 20px !important;
+}
+
+.cert-btn {
+  margin-top: auto;
+  width: 100%;
 }
