@@ -45,7 +45,7 @@ p{
 
 section{
   min-height:100vh;
-  padding:80px 8%;
+  padding:80px 5%; /* Slightly reduced padding to give cards more horizontal room */
 }
 
 .title{
@@ -215,18 +215,18 @@ nav{
 }
 
 /* ===========================
-   PROJECTS SECTION (New Layout)
+   PROJECTS SECTION (Strictly Horizontal)
 =========================== */
 #projects {
   text-align: left;
 }
 
-/* 3-Column Desktop Grid */
+/* Forces exactly 3 columns horizontally */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  max-width: 1250px; /* Wide enough to fit them comfortably */
   margin: 0 auto;
 }
 
@@ -244,8 +244,8 @@ nav{
 /* Project Images */
 .project-img {
   width: 100%;
-  height: 200px; /* Forces all images to exactly same height */
-  object-fit: cover; /* Crops cleanly if aspect ratios differ */
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 12px;
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
@@ -254,7 +254,7 @@ nav{
 /* Typography Hierarchy */
 .project-title {
   font-size: 1.4rem;
-  font-weight: 700; /* Bold */
+  font-weight: 700; 
   margin-bottom: 12px;
   color: #111;
   line-height: 1.3;
@@ -262,11 +262,11 @@ nav{
 
 .project-desc {
   font-size: 0.95rem;
-  font-weight: 400; /* Medium/Regular */
+  font-weight: 400; 
   margin-bottom: 20px !important;
   color: #444;
   line-height: 1.6;
-  height: 3em; /* Limits to ~2 lines visually */
+  height: 3em; 
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -276,7 +276,7 @@ nav{
 /* Features */
 .feature-title {
   font-size: 1.05rem !important;
-  font-weight: 600 !important; /* Semi-Bold */
+  font-weight: 600 !important; 
   margin-bottom: 10px !important;
   color: #222;
 }
@@ -317,7 +317,7 @@ nav{
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.8rem;
-  font-weight: 600; /* Medium-Bold Badges */
+  font-weight: 600; 
   color: #fff;
 }
 
@@ -336,30 +336,30 @@ nav{
 .project-btn-container {
   display: flex;
   gap: 12px;
-  margin-top: auto; /* Magically pushes buttons to absolute bottom */
+  margin-top: auto; 
   padding-top: 10px;
 }
 
 .btn-small {
   padding: 10px 20px;
   font-size: 0.9rem;
-  flex: 1; /* Makes buttons even width if possible */
+  flex: 1; 
   text-align: center;
 }
 
 /* ===========================
-   CERTIFICATIONS (Single Line Grid)
+   CERTIFICATIONS (Strictly Horizontal)
 =========================== */
 #certifications {
   text-align: center;
 }
 
-/* 5 Column Desktop Grid */
+/* Forces exactly 5 columns horizontally */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, 1fr); 
   gap: 1.5rem;
-  max-width: 1200px;
+  max-width: 1400px; /* Widened significantly so 5 cards sit comfortably in one row */
   margin: 0 auto;
 }
 
@@ -370,8 +370,8 @@ nav{
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  padding: 25px 20px;
-  height: 100%; /* Equal Height */
+  padding: 25px 15px; /* Slightly reduced inner padding to fit 5 side-by-side */
+  height: 100%; 
 }
 
 .cert-icon {
@@ -380,7 +380,7 @@ nav{
 }
 
 .cert-title {
-  font-size: 1.05rem !important;
+  font-size: 1rem !important;
   font-weight: 700 !important;
   margin-bottom: 8px !important;
   color: #111;
@@ -388,15 +388,17 @@ nav{
 }
 
 .issuer {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #555;
   margin-bottom: 20px !important;
 }
 
 .cert-btn {
-  margin-top: auto; /* Bottom align */
+  margin-top: auto; 
   width: 100%;
+  font-size: 0.8rem;
+  padding: 10px 15px;
 }
 
 /* ===========================
@@ -442,23 +444,22 @@ footer p {
 /* ===========================
    RESPONSIVE MEDIA QUERIES
 =========================== */
-@media screen and (max-width: 1100px) {
-  /* Tablet / Smaller Desktop */
+/* Keeps things looking good on smaller laptop/tablet screens where a single row would break the text */
+@media screen and (max-width: 1200px) {
   .project-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    grid-template-columns: repeat(2, 1fr); 
   }
   .cert-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 top, 2 bottom */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* Mobile Devices */
   .project-grid {
-    grid-template-columns: 1fr; /* 1 per row */
+    grid-template-columns: 1fr; 
   }
   .cert-grid {
-    grid-template-columns: 1fr; /* 1 per row */
+    grid-template-columns: 1fr; 
   }
   .about-containers {
     flex-direction: column;
