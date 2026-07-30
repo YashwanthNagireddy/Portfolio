@@ -6,6 +6,20 @@
   <title>Nagireddy Yashwanth Reddy | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
+  
+  <!-- Added style to make skills horizontal -->
+  <style>
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .skill-card {
+      flex: 1;
+      min-width: 200px;
+    }
+  </style>
 </head>
 <body>
 
@@ -259,6 +273,10 @@
             <li>Contributed to application development and data processing tasks.</li>
             <li>Improved understanding of AI applications and software development practices.</li>
           </ul>
+          <!-- Added Viswam certificate link -->
+          <div style="margin-top: 15px;">
+            <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('viswamdpa.pdf', '_blank')">View Certificate</button>
+          </div>
         </div>
 
       </div>
@@ -275,35 +293,30 @@
           <div class="cert-icon">☁️</div>
           <h2 class="cert-title">AWS Certified Cloud Practitioner</h2>
           <p class="issuer">Amazon Web Services</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('aws certification.pdf', '_blank')">View Certificate</button>
         </div>
 
-        <div class="details-container cert-card">
-          <div class="cert-icon">🤖</div>
-          <h2 class="cert-title">Microsoft Azure AI Fundamentals (AI-900)</h2>
-          <p class="issuer">Microsoft</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
-        </div>
+        <!-- AI 900 Removed -->
 
         <div class="details-container cert-card">
           <div class="cert-icon">📊</div>
           <h2 class="cert-title">NASSCOM – Acquiring Data</h2>
           <p class="issuer">NASSCOM</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('ad.pdf', '_blank')">View Certificate</button>
         </div>
 
         <div class="details-container cert-card">
           <div class="cert-icon">📈</div>
           <h2 class="cert-title">NASSCOM – Exploratory Data Analysis</h2>
           <p class="issuer">NASSCOM</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('eda.pdf', '_blank')">View Certificate</button>
         </div>
 
         <div class="details-container cert-card">
           <div class="cert-icon">📉</div>
           <h2 class="cert-title">NASSCOM – Data Processing and Visualization</h2>
           <p class="issuer">NASSCOM</p>
-          <button class="btn btn-color-2 btn-small cert-btn" onclick="location.href='#'">View Certificate</button>
+          <button class="btn btn-color-2 btn-small cert-btn" onclick="window.open('dpa.pdf', '_blank')">View Certificate</button>
         </div>
 
       </div>
