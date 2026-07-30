@@ -45,7 +45,7 @@ p{
 
 section{
   min-height:100vh;
-  padding:80px 5%; /* Slightly reduced padding to give cards more horizontal room */
+  padding:80px 5%;
 }
 
 .title{
@@ -106,6 +106,8 @@ nav{
 
 .section__text__p2{
   font-size:1.3rem;
+  font-weight: 500;
+  color: #333;
   margin:15px 0;
 }
 
@@ -161,7 +163,7 @@ nav{
 }
 
 /* ===========================
-   ABOUT & SKILLS CONTAINERS
+   ABOUT & GENERAL CONTAINERS
 =========================== */
 #about{
   text-align:center;
@@ -181,7 +183,9 @@ nav{
 }
 
 .text-container{
-  max-width:600px;
+  max-width:650px;
+  text-align: left;
+  font-size: 1.05rem;
 }
 
 .about-containers{
@@ -193,16 +197,16 @@ nav{
 
 .details-container{
   background:#fafafa;
-  border:1px solid #ddd;
+  border:1px solid #eaeaea;
   border-radius:20px;
   padding:25px;
-  width:300px;
   transition:.3s;
 }
 
 .details-container:hover{
   transform:translateY(-8px);
-  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  box-shadow:0 10px 25px rgba(0,0,0,.10);
+  border-color: #ddd;
 }
 
 .details-container h2{
@@ -215,22 +219,59 @@ nav{
 }
 
 /* ===========================
-   PROJECTS SECTION (Strictly Horizontal)
+   SKILLS SECTION (Horizontal Cards)
+=========================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 cards in a row on desktop */
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 30px 15px;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.skill-card h2 {
+  font-size: 1.05rem;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.skill-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ===========================
+   PROJECTS SECTION
 =========================== */
 #projects {
   text-align: left;
 }
 
-/* Forces exactly 3 columns horizontally */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 1.5rem;
-  max-width: 1250px; /* Wide enough to fit them comfortably */
+  max-width: 1250px;
   margin: 0 auto;
 }
 
-/* Equal Height Cards */
 .project-card {
   width: 100%;
   display: flex;
@@ -241,7 +282,6 @@ nav{
   height: 100%;
 }
 
-/* Project Images */
 .project-img {
   width: 100%;
   height: 200px; 
@@ -251,9 +291,8 @@ nav{
   border: 1px solid #eaeaea;
 }
 
-/* Typography Hierarchy */
 .project-title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700; 
   margin-bottom: 12px;
   color: #111;
@@ -266,14 +305,13 @@ nav{
   margin-bottom: 20px !important;
   color: #444;
   line-height: 1.6;
-  height: 3em; 
+  height: 4.5em;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-/* Features */
 .feature-title {
   font-size: 1.05rem !important;
   font-weight: 600 !important; 
@@ -305,7 +343,14 @@ nav{
   top: 0;
 }
 
-/* Technology Badges */
+.text-left {
+  text-align: left;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
 .tech-badges {
   display: flex;
   flex-wrap: wrap;
@@ -321,18 +366,16 @@ nav{
   color: #fff;
 }
 
-/* Custom Colorful Tech Colors */
-.tech-java { background-color: #f89820; color: #fff;}
-.tech-opencv { background-color: #5c6bc0; color: #fff;}
-.tech-python { background-color: #3776ab; color: #fff;}
-.tech-tkinter { background-color: #d33682; color: #fff;}
-.tech-mysql { background-color: #00758f; color: #fff;}
+.tech-java { background-color: #f89820;}
+.tech-opencv { background-color: #5c6bc0;}
+.tech-python { background-color: #3776ab;}
+.tech-tkinter { background-color: #d33682;}
+.tech-mysql { background-color: #00758f;}
 .tech-react { background-color: #61dafb; color: #000; }
-.tech-nextjs { background-color: #000000; color: #fff;}
-.tech-tailwind { background-color: #38b2ac; color: #fff;}
+.tech-nextjs { background-color: #000000;}
+.tech-tailwind { background-color: #38b2ac;}
 .tech-js { background-color: #f7df1e; color: #000; }
 
-/* Sticky Bottom Buttons */
 .project-btn-container {
   display: flex;
   gap: 12px;
@@ -348,18 +391,54 @@ nav{
 }
 
 /* ===========================
-   CERTIFICATIONS (Strictly Horizontal)
+   EXPERIENCE SECTION
+=========================== */
+.single-card-center {
+  display: flex;
+  justify-content: center;
+}
+
+.exp-card {
+  width: 100%;
+  max-width: 600px; /* Centers and bounds the single experience nicely */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 30px;
+}
+
+.exp-title {
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.exp-company {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #444;
+  margin-top: 8px;
+}
+
+.exp-date {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 15px !important;
+}
+
+/* ===========================
+   CERTIFICATIONS SECTION
 =========================== */
 #certifications {
   text-align: center;
 }
 
-/* Forces exactly 5 columns horizontally */
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   gap: 1.5rem;
-  max-width: 1400px; /* Widened significantly so 5 cards sit comfortably in one row */
+  max-width: 1400px; 
   margin: 0 auto;
 }
 
@@ -370,7 +449,7 @@ nav{
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  padding: 25px 15px; /* Slightly reduced inner padding to fit 5 side-by-side */
+  padding: 25px 15px; 
   height: 100%; 
 }
 
@@ -402,24 +481,42 @@ nav{
 }
 
 /* ===========================
-   CONTACT & FOOTER
+   CONTACT SECTION
 =========================== */
 #contact {
   text-align: center;
 }
 
-.contact-info-container {
+.contact-info-upper-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin-top: 40px;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fafafa;
+  padding: 15px 25px;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  transition: .3s;
+}
+
+.contact-info-container:hover {
+  transform: translateY(-5px);
+  border-color: #111;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .contact-info-container p {
   margin: 0;
   word-break: break-word;
+  font-weight: 500;
 }
 
 .contact-icon {
@@ -432,6 +529,9 @@ nav{
   height: 32px;
 }
 
+/* ===========================
+   FOOTER
+=========================== */
 footer {
   padding: 25px 8%;
   text-align: center;
@@ -444,30 +544,29 @@ footer p {
 /* ===========================
    RESPONSIVE MEDIA QUERIES
 =========================== */
-/* Keeps things looking good on smaller laptop/tablet screens where a single row would break the text */
 @media screen and (max-width: 1200px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr); 
   }
-  .cert-grid {
+  .cert-grid, .skills-grid {
     grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media screen and (max-width: 768px) {
-  .project-grid {
+  .project-grid, .cert-grid, .skills-grid {
     grid-template-columns: 1fr; 
   }
-  .cert-grid {
-    grid-template-columns: 1fr; 
-  }
-  .about-containers {
+  
+  .about-containers, .contact-info-upper-container {
     flex-direction: column;
     align-items: center;
   }
+  
   .section-container {
     flex-direction: column;
   }
+  
   #profile {
     flex-direction: column;
     text-align: center;
