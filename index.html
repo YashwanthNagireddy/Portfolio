@@ -21,8 +21,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
 
-  <!-- Skills / Buttons / Project Tech -->
   <style>
+
+    /* ======================================================
+       SKILLS / BUTTONS
+       ====================================================== */
 
     .skills-grid {
       display: flex;
@@ -111,6 +114,50 @@
     }
 
     /* ======================================================
+       MICROSOFT LEARN
+       ====================================================== */
+
+    .learning-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .learning-card {
+      text-align: left;
+    }
+
+    .learning-card h2 {
+      margin-bottom: 0.8rem;
+    }
+
+    .learning-card ul {
+      margin-top: 1rem;
+      padding-left: 1.4rem;
+      line-height: 1.7;
+    }
+
+    .learning-stats {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 1.2rem 0;
+    }
+
+    .learning-stat {
+      padding: 0.55rem 1rem;
+      border-radius: 20px;
+      border: 1px solid #d6d6d6;
+      background: #f7f7f7;
+      font-weight: 600;
+    }
+
+    .learning-topic {
+      margin-bottom: 0.5rem;
+    }
+
+    /* ======================================================
        SKILLS
        ====================================================== */
 
@@ -132,19 +179,31 @@
     }
 
     /* ======================================================
-       RESPONSIVE CERTIFICATIONS
+       RESPONSIVE
        ====================================================== */
 
     @media screen and (max-width: 1000px) {
+
       .cert-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .learning-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
 
     @media screen and (max-width: 600px) {
+
       .cert-grid {
         grid-template-columns: 1fr;
       }
+
+      .learning-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
 
   </style>
@@ -162,14 +221,12 @@
     Yashwanth Reddy
   </div>
 
-  <!-- Hamburger Icon -->
   <div class="hamburger-icon" onclick="toggleMenu()">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <!-- Navigation Links -->
   <ul class="nav-links">
 
     <li>
@@ -194,6 +251,10 @@
 
     <li>
       <a href="#certifications" onclick="closeMenu()">Certifications</a>
+    </li>
+
+    <li>
+      <a href="#learning" onclick="closeMenu()">Microsoft Learn</a>
     </li>
 
     <li>
@@ -460,6 +521,7 @@
 
         <p>MySQL</p>
         <p>SQL</p>
+        <p>MongoDB (Basic)</p>
         <p>Relational Database Concepts</p>
 
       </div>
@@ -547,14 +609,11 @@
         </h2>
 
         <p class="project-desc">
-
           A secure backend application providing REST APIs for
           users, products, categories, carts and orders with
           authentication, authorization, database integration
           and API testing.
-
         </p>
-
 
         <div class="project-features">
 
@@ -564,9 +623,7 @@
 
           <ul class="feature-list">
 
-            <li>
-              JWT-based user authentication
-            </li>
+            <li>JWT-based user authentication</li>
 
             <li>
               Role-based authorization using Spring Security
@@ -600,7 +657,6 @@
 
         </div>
 
-
         <div class="project-tech">
 
           <h3 class="feature-title">
@@ -609,62 +665,23 @@
 
           <div class="tech-badges">
 
-            <span class="tech-chip">
-              Java
-            </span>
-
-            <span class="tech-chip">
-              Spring Boot
-            </span>
-
-            <span class="tech-chip">
-              Spring Security
-            </span>
-
-            <span class="tech-chip">
-              Spring Data JPA
-            </span>
-
-            <span class="tech-chip">
-              Hibernate
-            </span>
-
-            <span class="tech-chip">
-              REST API
-            </span>
-
-            <span class="tech-chip">
-              JWT
-            </span>
-
-            <span class="tech-chip">
-              MySQL
-            </span>
-
-            <span class="tech-chip">
-              SQL
-            </span>
-
-            <span class="tech-chip">
-              Swagger / OpenAPI
-            </span>
-
-            <span class="tech-chip">
-              Maven
-            </span>
-
-            <span class="tech-chip">
-              Git
-            </span>
-
-            <span class="tech-chip">
-              GitHub
-            </span>
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">Spring Boot</span>
+            <span class="tech-chip">Spring Security</span>
+            <span class="tech-chip">Spring Data JPA</span>
+            <span class="tech-chip">Hibernate</span>
+            <span class="tech-chip">REST API</span>
+            <span class="tech-chip">JWT</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">SQL</span>
+            <span class="tech-chip">Swagger / OpenAPI</span>
+            <span class="tech-chip">Maven</span>
+            <span class="tech-chip">Git</span>
+            <span class="tech-chip">GitHub</span>
 
           </div>
 
         </div>
-
 
         <div class="project-btn-container">
 
@@ -699,13 +716,10 @@
         </h2>
 
         <p class="project-desc">
-
           A computer vision-based application that monitors
           driver fatigue in real time and generates alerts
           when signs of drowsiness are detected.
-
         </p>
-
 
         <div class="project-features">
 
@@ -715,30 +729,15 @@
 
           <ul class="feature-list">
 
-            <li>
-              Real-time video monitoring
-            </li>
-
-            <li>
-              Face detection
-            </li>
-
-            <li>
-              Eye detection and monitoring
-            </li>
-
-            <li>
-              Drowsiness detection
-            </li>
-
-            <li>
-              Audio alert system
-            </li>
+            <li>Real-time video monitoring</li>
+            <li>Face detection</li>
+            <li>Eye detection and monitoring</li>
+            <li>Drowsiness detection</li>
+            <li>Audio alert system</li>
 
           </ul>
 
         </div>
-
 
         <div class="project-tech">
 
@@ -748,26 +747,14 @@
 
           <div class="tech-badges">
 
-            <span class="tech-chip">
-              Java
-            </span>
-
-            <span class="tech-chip">
-              OpenCV
-            </span>
-
-            <span class="tech-chip">
-              Computer Vision
-            </span>
-
-            <span class="tech-chip">
-              Image Processing
-            </span>
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">OpenCV</span>
+            <span class="tech-chip">Computer Vision</span>
+            <span class="tech-chip">Image Processing</span>
 
           </div>
 
         </div>
-
 
         <div class="project-btn-container">
 
@@ -802,12 +789,9 @@
         </h2>
 
         <p class="project-desc">
-
           A desktop application for managing student records
           with database integration and complete CRUD functionality.
-
         </p>
-
 
         <div class="project-features">
 
@@ -817,34 +801,16 @@
 
           <ul class="feature-list">
 
-            <li>
-              Create student records
-            </li>
-
-            <li>
-              Read and search student records
-            </li>
-
-            <li>
-              Update student information
-            </li>
-
-            <li>
-              Delete student records
-            </li>
-
-            <li>
-              MySQL database connectivity
-            </li>
-
-            <li>
-              User-friendly desktop interface
-            </li>
+            <li>Create student records</li>
+            <li>Read and search student records</li>
+            <li>Update student information</li>
+            <li>Delete student records</li>
+            <li>MySQL database connectivity</li>
+            <li>User-friendly desktop interface</li>
 
           </ul>
 
         </div>
-
 
         <div class="project-tech">
 
@@ -854,30 +820,15 @@
 
           <div class="tech-badges">
 
-            <span class="tech-chip">
-              Python
-            </span>
-
-            <span class="tech-chip">
-              Tkinter
-            </span>
-
-            <span class="tech-chip">
-              MySQL
-            </span>
-
-            <span class="tech-chip">
-              SQL
-            </span>
-
-            <span class="tech-chip">
-              CRUD
-            </span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Tkinter</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">SQL</span>
+            <span class="tech-chip">CRUD</span>
 
           </div>
 
         </div>
-
 
         <div class="project-btn-container">
 
@@ -912,12 +863,9 @@
         </h2>
 
         <p class="project-desc">
-
           A responsive interactive calendar application with
           dynamic navigation, modern UI and cross-device support.
-
         </p>
-
 
         <div class="project-features">
 
@@ -927,30 +875,15 @@
 
           <ul class="feature-list">
 
-            <li>
-              Dynamic monthly calendar view
-            </li>
-
-            <li>
-              Previous and next month navigation
-            </li>
-
-            <li>
-              Responsive cross-device interface
-            </li>
-
-            <li>
-              Interactive user experience
-            </li>
-
-            <li>
-              Modern component-based UI
-            </li>
+            <li>Dynamic monthly calendar view</li>
+            <li>Previous and next month navigation</li>
+            <li>Responsive cross-device interface</li>
+            <li>Interactive user experience</li>
+            <li>Modern component-based UI</li>
 
           </ul>
 
         </div>
-
 
         <div class="project-tech">
 
@@ -960,38 +893,17 @@
 
           <div class="tech-badges">
 
-            <span class="tech-chip">
-              React.js
-            </span>
-
-            <span class="tech-chip">
-              Next.js
-            </span>
-
-            <span class="tech-chip">
-              JavaScript
-            </span>
-
-            <span class="tech-chip">
-              HTML5
-            </span>
-
-            <span class="tech-chip">
-              CSS3
-            </span>
-
-            <span class="tech-chip">
-              Tailwind CSS
-            </span>
-
-            <span class="tech-chip">
-              Vercel
-            </span>
+            <span class="tech-chip">React.js</span>
+            <span class="tech-chip">Next.js</span>
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">HTML5</span>
+            <span class="tech-chip">CSS3</span>
+            <span class="tech-chip">Tailwind CSS</span>
+            <span class="tech-chip">Vercel</span>
 
           </div>
 
         </div>
-
 
         <div class="project-btn-container">
 
@@ -1016,7 +928,6 @@
         </div>
 
       </div>
-
 
     </div>
 
@@ -1076,7 +987,6 @@
 
         </ul>
 
-
         <div style="margin-top: 15px;">
 
           <a
@@ -1105,7 +1015,7 @@
 <section id="certifications">
 
   <h1 class="title">
-    Certifications & Learning
+    Certifications
   </h1>
 
   <div class="experience-details-container">
@@ -1156,11 +1066,6 @@
           SQL
         </p>
 
-        <!--
-          Rename your SQL certificate file to:
-          sql-certification.pdf
-        -->
-
         <a
           href="./assets/sql-certification.pdf"
           target="_blank"
@@ -1188,11 +1093,6 @@
           IBM
         </p>
 
-        <!--
-          Rename your certificate file to:
-          ibm-data-fundamentals.pdf
-        -->
-
         <a
           href="./assets/ibm-data-fundamentals.pdf"
           target="_blank"
@@ -1204,62 +1104,24 @@
       </div>
 
 
-      <!-- MICROSOFT LEARN DATA -->
+      <!-- MONGODB -->
 
       <div class="details-container cert-card">
 
         <div class="cert-icon">
-          📈
+          🍃
         </div>
 
         <h2 class="cert-title">
-          Data Learning
+          MongoDB Certificate
         </h2>
 
         <p class="issuer">
-          Microsoft Learn
+          MongoDB
         </p>
 
-        <!--
-          Rename your Microsoft Learn certificate/completion
-          file to:
-          microsoft-learn-data.pdf
-        -->
-
         <a
-          href="./assets/microsoft-learn-data.pdf"
-          target="_blank"
-          class="btn btn-color-2 btn-small cert-btn"
-        >
-          View Certificate
-        </a>
-
-      </div>
-
-
-      <!-- AI-900 -->
-
-      <div class="details-container cert-card">
-
-        <div class="cert-icon">
-          🤖
-        </div>
-
-        <h2 class="cert-title">
-          Microsoft Azure AI Fundamentals
-        </h2>
-
-        <p class="issuer">
-          Microsoft | AI-900
-        </p>
-
-        <!--
-          Rename your AI-900 certificate file to:
-          microsoft-ai-900.pdf
-        -->
-
-        <a
-          href="./assets/microsoft-ai-900.pdf"
+          href="./assets/MongoDB.pdf"
           target="_blank"
           class="btn btn-color-2 btn-small cert-btn"
         >
@@ -1349,6 +1211,206 @@
 
       </div>
 
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     MICROSOFT LEARN ACHIEVEMENTS
+     ========================================================= -->
+
+<section id="learning">
+
+  <h1 class="title">
+    Microsoft Learn Achievements
+  </h1>
+
+  <div class="experience-details-container">
+
+    <div class="learning-grid">
+
+
+      <!-- ACHIEVEMENT OVERVIEW -->
+
+      <div class="details-container learning-card">
+
+        <div class="cert-icon">
+          📘
+        </div>
+
+        <h2>
+          Microsoft Learn — Data & Analytics
+        </h2>
+
+        <p>
+          Completed Microsoft Learn modules focused on
+          Power BI, Microsoft Fabric, data preparation,
+          analytics and modern data visualization.
+        </p>
+
+        <div class="learning-stats">
+
+          <span class="learning-stat">
+            🏆 8 Trophies
+          </span>
+
+          <span class="learning-stat">
+            🎖️ 35 Badges
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- POWER BI ACHIEVEMENTS -->
+
+      <div class="details-container learning-card">
+
+        <div class="cert-icon">
+          📊
+        </div>
+
+        <h2>
+          Power BI & Data Analytics
+        </h2>
+
+        <ul>
+
+          <li class="learning-topic">
+            Prepare and visualize data with Microsoft Power BI
+          </li>
+
+          <li class="learning-topic">
+            Design Power BI reports
+          </li>
+
+          <li class="learning-topic">
+            Configure a semantic model
+          </li>
+
+          <li class="learning-topic">
+            Clean, transform, and load data in Power BI
+          </li>
+
+          <li class="learning-topic">
+            Get data in Power BI
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- MICROSOFT FABRIC -->
+
+      <div class="details-container learning-card">
+
+        <div class="cert-icon">
+          🔷
+        </div>
+
+        <h2>
+          Microsoft Fabric
+        </h2>
+
+        <ul>
+
+          <li class="learning-topic">
+            Introduction to end-to-end analytics using Microsoft Fabric
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- COPILOT -->
+
+      <div class="details-container learning-card">
+
+        <div class="cert-icon">
+          🤖
+        </div>
+
+        <h2>
+          Copilot in Power BI
+        </h2>
+
+        <ul>
+
+          <li class="learning-topic">
+            Get started with Copilot in Power BI
+          </li>
+
+          <li class="learning-topic">
+            Exploring AI-assisted analytics capabilities
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- POWER BI DEVELOPMENT -->
+
+      <div class="details-container learning-card">
+
+        <div class="cert-icon">
+          📈
+        </div>
+
+        <h2>
+          Power BI Development
+        </h2>
+
+        <ul>
+
+          <li class="learning-topic">
+            Get started building with Power BI
+          </li>
+
+          <li class="learning-topic">
+            Data acquisition and preparation
+          </li>
+
+          <li class="learning-topic">
+            Data visualization and reporting
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- LEARNING NOTE -->
+
+      <div class="details-container learning-card">
+
+        <div class="cert-icon">
+          🎓
+        </div>
+
+        <h2>
+          Learning Focus
+        </h2>
+
+        <p>
+          Microsoft Learn achievements demonstrating hands-on
+          learning in data analytics, Power BI and Microsoft Fabric.
+        </p>
+
+        <p style="margin-top: 1rem;">
+          <strong>Note:</strong> These are Microsoft Learn
+          achievements and badges, not Microsoft professional
+          certifications.
+        </p>
+
+      </div>
 
     </div>
 
