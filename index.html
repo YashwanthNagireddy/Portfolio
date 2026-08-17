@@ -43,6 +43,7 @@
       margin: 0.35rem 0;
     }
 
+
     /* ======================================================
        BUTTONS
        ====================================================== */
@@ -54,6 +55,7 @@
       justify-content: center;
       text-align: center;
     }
+
 
     /* ======================================================
        PROJECT TECHNOLOGY BADGES
@@ -85,6 +87,7 @@
     .feature-title {
       margin-bottom: 0.4rem;
     }
+
 
     /* ======================================================
        CERTIFICATION GRID
@@ -123,6 +126,7 @@
       margin-top: auto;
     }
 
+
     /* ======================================================
        PROJECT DESCRIPTION
        ====================================================== */
@@ -136,26 +140,34 @@
       line-height: 1.6;
     }
 
+
     /* ======================================================
        RESPONSIVE CERTIFICATIONS
        ====================================================== */
 
     @media screen and (max-width: 1000px) {
+
       .cert-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
     @media screen and (max-width: 600px) {
+
       .cert-grid {
         grid-template-columns: 1fr;
       }
+
     }
 
   </style>
+
 </head>
 
+
 <body>
+
 
 <!-- =========================================================
      NAVIGATION
@@ -167,40 +179,81 @@
     Yashwanth Reddy
   </div>
 
-  <div class="hamburger-icon" onclick="toggleMenu()">
+  <div
+    class="hamburger-icon"
+    onclick="toggleMenu()"
+  >
+
     <span></span>
     <span></span>
     <span></span>
+
   </div>
+
 
   <ul class="nav-links">
 
     <li>
-      <a href="#about" onclick="closeMenu()">About</a>
+      <a
+        href="#about"
+        onclick="closeMenu()"
+      >
+        About
+      </a>
     </li>
 
     <li>
-      <a href="#education" onclick="closeMenu()">Education</a>
+      <a
+        href="#education"
+        onclick="closeMenu()"
+      >
+        Education
+      </a>
     </li>
 
     <li>
-      <a href="#experience" onclick="closeMenu()">Skills</a>
+      <a
+        href="#experience"
+        onclick="closeMenu()"
+      >
+        Skills
+      </a>
     </li>
 
     <li>
-      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a
+        href="#projects"
+        onclick="closeMenu()"
+      >
+        Projects
+      </a>
     </li>
 
     <li>
-      <a href="#work-experience" onclick="closeMenu()">Experience</a>
+      <a
+        href="#work-experience"
+        onclick="closeMenu()"
+      >
+        Experience
+      </a>
     </li>
 
     <li>
-      <a href="#certifications" onclick="closeMenu()">Certifications</a>
+      <a
+        href="#certifications"
+        onclick="closeMenu()"
+      >
+        Certifications
+      </a>
     </li>
 
     <li>
-      <a href="#contact" onclick="closeMenu()">Contact</a>
+      <a
+        href="#contact"
+        onclick="closeMenu()"
+      >
+        Contact
+      </a>
     </li>
 
   </ul>
@@ -223,9 +276,12 @@
 
   </div>
 
+
   <div class="section__text">
 
-    <p>Hello, I'm</p>
+    <p>
+      Hello, I'm
+    </p>
 
     <h1 class="title">
       Nagireddy Yashwanth Reddy
@@ -235,15 +291,18 @@
       Software Engineer Aspirant | Java Developer | Backend Developer
     </p>
 
+
     <div class="btn-container">
 
       <a
-        href="./assets/NAGIREDDY%20YASHWANTH%20REDDY%20RESUME.pdf"
+        href="assets/NAGIREDDY%20YASHWANTH%20REDDY%20RESUME.pdf"
         target="_blank"
+        rel="noopener noreferrer"
         class="btn"
       >
         Download CV
       </a>
+
 
       <a
         href="#contact"
@@ -253,6 +312,7 @@
       </a>
 
     </div>
+
 
     <div id="socials-container">
 
@@ -265,6 +325,7 @@
           '_blank'
         )"
       >
+
 
       <img
         src="assets/github.png"
@@ -293,6 +354,7 @@
     About Me
   </h1>
 
+
   <div class="section-container">
 
     <img
@@ -300,6 +362,7 @@
       class="about-pic"
       alt="About Yashwanth Reddy"
     >
+
 
     <div class="text-container">
 
@@ -311,7 +374,9 @@
         REST APIs, Spring Security, JPA, Hibernate and MySQL.
       </p>
 
+
       <br>
+
 
       <p>
         I enjoy building backend applications, designing APIs,
@@ -337,6 +402,7 @@
   <h1 class="title">
     Education
   </h1>
+
 
   <div class="experience-details-container">
 
@@ -382,6 +448,7 @@
   <h1 class="title">
     Technical Skills
   </h1>
+
 
   <div class="experience-details-container">
 
@@ -529,6 +596,7 @@
     Projects
   </h1>
 
+
   <div class="experience-details-container">
 
     <div class="project-grid">
@@ -546,16 +614,21 @@
           class="project-img"
         >
 
+
         <h2 class="project-title">
           E-Commerce Backend API
         </h2>
 
+
         <p class="project-desc">
+
           A secure backend application providing REST APIs for
           users, products, categories, carts and orders with
           authentication, authorization, database integration
           and API testing.
+
         </p>
+
 
         <div class="project-features">
 
@@ -563,20 +636,45 @@
             Key Features:
           </h3>
 
+
           <ul class="feature-list">
 
-            <li>JWT-based user authentication</li>
-            <li>Role-based authorization using Spring Security</li>
-            <li>User, product and category management</li>
-            <li>Shopping cart and order management</li>
-            <li>RESTful CRUD APIs</li>
-            <li>MySQL database integration</li>
-            <li>Request validation and exception handling</li>
-            <li>API testing and debugging using Swagger</li>
+            <li>
+              JWT-based user authentication
+            </li>
+
+            <li>
+              Role-based authorization using Spring Security
+            </li>
+
+            <li>
+              User, product and category management
+            </li>
+
+            <li>
+              Shopping cart and order management
+            </li>
+
+            <li>
+              RESTful CRUD APIs
+            </li>
+
+            <li>
+              MySQL database integration
+            </li>
+
+            <li>
+              Request validation and exception handling
+            </li>
+
+            <li>
+              API testing and debugging using Swagger
+            </li>
 
           </ul>
 
         </div>
+
 
         <div class="project-tech">
 
@@ -584,25 +682,65 @@
             Technologies Used:
           </h3>
 
+
           <div class="tech-badges">
 
-            <span class="tech-chip">Java</span>
-            <span class="tech-chip">Spring Boot</span>
-            <span class="tech-chip">Spring Security</span>
-            <span class="tech-chip">Spring Data JPA</span>
-            <span class="tech-chip">Hibernate</span>
-            <span class="tech-chip">REST API</span>
-            <span class="tech-chip">JWT</span>
-            <span class="tech-chip">MySQL</span>
-            <span class="tech-chip">SQL</span>
-            <span class="tech-chip">Swagger / OpenAPI</span>
-            <span class="tech-chip">Maven</span>
-            <span class="tech-chip">Git</span>
-            <span class="tech-chip">GitHub</span>
+            <span class="tech-chip">
+              Java
+            </span>
+
+            <span class="tech-chip">
+              Spring Boot
+            </span>
+
+            <span class="tech-chip">
+              Spring Security
+            </span>
+
+            <span class="tech-chip">
+              Spring Data JPA
+            </span>
+
+            <span class="tech-chip">
+              Hibernate
+            </span>
+
+            <span class="tech-chip">
+              REST API
+            </span>
+
+            <span class="tech-chip">
+              JWT
+            </span>
+
+            <span class="tech-chip">
+              MySQL
+            </span>
+
+            <span class="tech-chip">
+              SQL
+            </span>
+
+            <span class="tech-chip">
+              Swagger / OpenAPI
+            </span>
+
+            <span class="tech-chip">
+              Maven
+            </span>
+
+            <span class="tech-chip">
+              Git
+            </span>
+
+            <span class="tech-chip">
+              GitHub
+            </span>
 
           </div>
 
         </div>
+
 
         <div class="project-btn-container">
 
@@ -632,15 +770,20 @@
           class="project-img"
         >
 
+
         <h2 class="project-title">
           Driver Drowsiness Detection System
         </h2>
 
+
         <p class="project-desc">
+
           A computer vision-based application that monitors
           driver fatigue in real time and generates alerts
           when signs of drowsiness are detected.
+
         </p>
+
 
         <div class="project-features">
 
@@ -648,17 +791,33 @@
             Key Features:
           </h3>
 
+
           <ul class="feature-list">
 
-            <li>Real-time video monitoring</li>
-            <li>Face detection</li>
-            <li>Eye detection and monitoring</li>
-            <li>Drowsiness detection</li>
-            <li>Audio alert system</li>
+            <li>
+              Real-time video monitoring
+            </li>
+
+            <li>
+              Face detection
+            </li>
+
+            <li>
+              Eye detection and monitoring
+            </li>
+
+            <li>
+              Drowsiness detection
+            </li>
+
+            <li>
+              Audio alert system
+            </li>
 
           </ul>
 
         </div>
+
 
         <div class="project-tech">
 
@@ -666,16 +825,29 @@
             Technologies Used:
           </h3>
 
+
           <div class="tech-badges">
 
-            <span class="tech-chip">Java</span>
-            <span class="tech-chip">OpenCV</span>
-            <span class="tech-chip">Computer Vision</span>
-            <span class="tech-chip">Image Processing</span>
+            <span class="tech-chip">
+              Java
+            </span>
+
+            <span class="tech-chip">
+              OpenCV
+            </span>
+
+            <span class="tech-chip">
+              Computer Vision
+            </span>
+
+            <span class="tech-chip">
+              Image Processing
+            </span>
 
           </div>
 
         </div>
+
 
         <div class="project-btn-container">
 
@@ -705,14 +877,19 @@
           class="project-img"
         >
 
+
         <h2 class="project-title">
           Student Management System
         </h2>
 
+
         <p class="project-desc">
+
           A desktop application for managing student records
           with database integration and complete CRUD functionality.
+
         </p>
+
 
         <div class="project-features">
 
@@ -720,18 +897,37 @@
             Key Features:
           </h3>
 
+
           <ul class="feature-list">
 
-            <li>Create student records</li>
-            <li>Read and search student records</li>
-            <li>Update student information</li>
-            <li>Delete student records</li>
-            <li>MySQL database connectivity</li>
-            <li>User-friendly desktop interface</li>
+            <li>
+              Create student records
+            </li>
+
+            <li>
+              Read and search student records
+            </li>
+
+            <li>
+              Update student information
+            </li>
+
+            <li>
+              Delete student records
+            </li>
+
+            <li>
+              MySQL database connectivity
+            </li>
+
+            <li>
+              User-friendly desktop interface
+            </li>
 
           </ul>
 
         </div>
+
 
         <div class="project-tech">
 
@@ -739,17 +935,33 @@
             Technologies Used:
           </h3>
 
+
           <div class="tech-badges">
 
-            <span class="tech-chip">Python</span>
-            <span class="tech-chip">Tkinter</span>
-            <span class="tech-chip">MySQL</span>
-            <span class="tech-chip">SQL</span>
-            <span class="tech-chip">CRUD</span>
+            <span class="tech-chip">
+              Python
+            </span>
+
+            <span class="tech-chip">
+              Tkinter
+            </span>
+
+            <span class="tech-chip">
+              MySQL
+            </span>
+
+            <span class="tech-chip">
+              SQL
+            </span>
+
+            <span class="tech-chip">
+              CRUD
+            </span>
 
           </div>
 
         </div>
+
 
         <div class="project-btn-container">
 
@@ -779,14 +991,19 @@
           class="project-img"
         >
 
+
         <h2 class="project-title">
           Interactive Wall Calendar
         </h2>
 
+
         <p class="project-desc">
+
           A responsive interactive calendar application with
           dynamic navigation, modern UI and cross-device support.
+
         </p>
+
 
         <div class="project-features">
 
@@ -794,17 +1011,33 @@
             Key Features:
           </h3>
 
+
           <ul class="feature-list">
 
-            <li>Dynamic monthly calendar view</li>
-            <li>Previous and next month navigation</li>
-            <li>Responsive cross-device interface</li>
-            <li>Interactive user experience</li>
-            <li>Modern component-based UI</li>
+            <li>
+              Dynamic monthly calendar view
+            </li>
+
+            <li>
+              Previous and next month navigation
+            </li>
+
+            <li>
+              Responsive cross-device interface
+            </li>
+
+            <li>
+              Interactive user experience
+            </li>
+
+            <li>
+              Modern component-based UI
+            </li>
 
           </ul>
 
         </div>
+
 
         <div class="project-tech">
 
@@ -812,19 +1045,41 @@
             Technologies Used:
           </h3>
 
+
           <div class="tech-badges">
 
-            <span class="tech-chip">React.js</span>
-            <span class="tech-chip">Next.js</span>
-            <span class="tech-chip">JavaScript</span>
-            <span class="tech-chip">HTML5</span>
-            <span class="tech-chip">CSS3</span>
-            <span class="tech-chip">Tailwind CSS</span>
-            <span class="tech-chip">Vercel</span>
+            <span class="tech-chip">
+              React.js
+            </span>
+
+            <span class="tech-chip">
+              Next.js
+            </span>
+
+            <span class="tech-chip">
+              JavaScript
+            </span>
+
+            <span class="tech-chip">
+              HTML5
+            </span>
+
+            <span class="tech-chip">
+              CSS3
+            </span>
+
+            <span class="tech-chip">
+              Tailwind CSS
+            </span>
+
+            <span class="tech-chip">
+              Vercel
+            </span>
 
           </div>
 
         </div>
+
 
         <div class="project-btn-container">
 
@@ -836,6 +1091,7 @@
           >
             GitHub
           </a>
+
 
           <a
             href="https://wall-calendar-bg1pqvqna-yashwanthnagireddy12-6118s-projects.vercel.app/"
@@ -867,6 +1123,7 @@
     Experience
   </h1>
 
+
   <div class="experience-details-container">
 
     <div class="experience-grid single-card-center">
@@ -877,13 +1134,16 @@
           AI Developer Intern
         </h2>
 
+
         <h3 class="exp-company">
           VISWAM.AI | Hyderabad
         </h3>
 
+
         <p class="exp-date">
           2025
         </p>
+
 
         <ul class="feature-list text-left mt-15">
 
@@ -908,11 +1168,13 @@
 
         </ul>
 
+
         <div style="margin-top: 15px;">
 
           <a
-            href="./assets/viswamintern.pdf"
+            href="assets/viswamintern.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn btn-color-2 btn-small cert-btn"
           >
             View Certificate
@@ -939,6 +1201,7 @@
     Certifications
   </h1>
 
+
   <div class="experience-details-container">
 
     <div class="cert-grid">
@@ -954,17 +1217,21 @@
           ☁️
         </div>
 
+
         <h2 class="cert-title">
           AWS Certified Cloud Practitioner
         </h2>
+
 
         <p class="issuer">
           Amazon Web Services
         </p>
 
+
         <a
-          href="./assets/aws%20certification.pdf"
+          href="assets/aws%20certification.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-color-2 btn-small cert-btn"
         >
           View Certificate
@@ -983,17 +1250,21 @@
           📊
         </div>
 
+
         <h2 class="cert-title">
-          Data Fundamentals
+          IBM Data Fundamentals
         </h2>
+
 
         <p class="issuer">
           IBM
         </p>
 
+
         <a
-          href="./assets/IBMDesign20260817-21-dkrj4v.pdf"
+          href="assets/ibm-data-fundamentals.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-color-2 btn-small cert-btn"
         >
           View Certificate
@@ -1012,17 +1283,21 @@
           🍃
         </div>
 
+
         <h2 class="cert-title">
           MongoDB Certificate
         </h2>
+
 
         <p class="issuer">
           MongoDB
         </p>
 
+
         <a
-          href="./assets/MongoDB.pdf"
+          href="assets/mongodb.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-color-2 btn-small cert-btn"
         >
           View Certificate
@@ -1041,17 +1316,21 @@
           🗄️
         </div>
 
+
         <h2 class="cert-title">
           SQL Basic
         </h2>
+
 
         <p class="issuer">
           SQL
         </p>
 
+
         <a
-          href="./assets/sql_basic%20certificate.pdf"
+          href="assets/sql-basic.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-color-2 btn-small cert-btn"
         >
           View Certificate
@@ -1070,17 +1349,21 @@
           📚
         </div>
 
+
         <h2 class="cert-title">
           Acquiring Data
         </h2>
+
 
         <p class="issuer">
           NASSCOM
         </p>
 
+
         <a
-          href="./assets/ad.pdf"
+          href="assets/ad.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-color-2 btn-small cert-btn"
         >
           View Certificate
@@ -1099,17 +1382,21 @@
           📊
         </div>
 
+
         <h2 class="cert-title">
           Exploratory Data Analysis
         </h2>
+
 
         <p class="issuer">
           NASSCOM
         </p>
 
+
         <a
-          href="./assets/eda.pdf"
+          href="assets/eda.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-color-2 btn-small cert-btn"
         >
           View Certificate
@@ -1128,17 +1415,21 @@
           📉
         </div>
 
+
         <h2 class="cert-title">
-          Data Processing & Visualization
+          Data Processing &amp; Visualization
         </h2>
+
 
         <p class="issuer">
           NASSCOM
         </p>
 
+
         <a
-          href="./assets/dpa.pdf"
+          href="assets/dpa.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-color-2 btn-small cert-btn"
         >
           View Certificate
@@ -1164,8 +1455,11 @@
     Contact Me
   </h1>
 
+
   <div class="contact-info-upper-container">
 
+
+    <!-- EMAIL -->
 
     <div class="contact-info-container">
 
@@ -1175,14 +1469,19 @@
         alt="Email Icon"
       >
 
+
       <p>
+
         <a href="mailto:yashwanthnagireddy12@gmail.com">
           yashwanthnagireddy12@gmail.com
         </a>
+
       </p>
 
     </div>
 
+
+    <!-- LINKEDIN -->
 
     <div class="contact-info-container">
 
@@ -1192,7 +1491,9 @@
         alt="LinkedIn Icon"
       >
 
+
       <p>
+
         <a
           href="https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324"
           target="_blank"
@@ -1200,10 +1501,13 @@
         >
           LinkedIn
         </a>
+
       </p>
 
     </div>
 
+
+    <!-- GITHUB -->
 
     <div class="contact-info-container">
 
@@ -1213,7 +1517,9 @@
         alt="GitHub Icon"
       >
 
+
       <p>
+
         <a
           href="https://github.com/YashwanthNagireddy"
           target="_blank"
@@ -1221,6 +1527,7 @@
         >
           GitHub
         </a>
+
       </p>
 
     </div>
