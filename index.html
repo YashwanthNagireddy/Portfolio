@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nagireddy Yashwanth Reddy | Portfolio</title>
+
+  <title>Nagireddy Yashwanth Reddy | Software Engineer Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Nagireddy Yashwanth Reddy - Java Developer, Backend Developer and Software Engineer Aspirant."
+  >
+
+  <meta
+    name="keywords"
+    content="Yashwanth Reddy, Java Developer, Spring Boot, Backend Developer, Software Engineer, MySQL, REST API, AI"
+  >
+
+  <meta name="author" content="Nagireddy Yashwanth Reddy">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
-  
-  <!-- Added style to make skills horizontal -->
+
+  <!-- Skills / Buttons / Project Tech -->
   <style>
+
     .skills-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
     }
+
     .skill-card {
       flex: 1;
       min-width: 200px;
     }
-    /* Ensures link tags look exactly like buttons */
+
     a.btn {
       text-decoration: none;
       display: inline-flex;
@@ -27,374 +43,1415 @@
       justify-content: center;
       text-align: center;
     }
+
+    /* ======================================================
+       PROJECT TECHNOLOGY BADGES
+       ====================================================== */
+
+    .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.45rem;
+      margin-top: 0.7rem;
+    }
+
+    .tech-chip {
+      display: inline-block;
+      padding: 0.35rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border: 1px solid #d6d6d6;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    .project-tech {
+      margin-top: 1rem;
+    }
+
+    .feature-title {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ======================================================
+       CERTIFICATION GRID
+       ====================================================== */
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .cert-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 230px;
+    }
+
+    .cert-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cert-title {
+      margin-bottom: 0.5rem;
+    }
+
+    .issuer {
+      margin-bottom: 1rem;
+    }
+
+    .cert-btn {
+      margin-top: auto;
+    }
+
+    /* ======================================================
+       SKILLS
+       ====================================================== */
+
+    .skill-card p {
+      margin: 0.35rem 0;
+    }
+
+    /* ======================================================
+       PROJECT DESCRIPTION
+       ====================================================== */
+
+    .project-desc {
+      line-height: 1.6;
+    }
+
+    .feature-list {
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    /* ======================================================
+       RESPONSIVE CERTIFICATIONS
+       ====================================================== */
+
+    @media screen and (max-width: 1000px) {
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
+
 <body>
 
-<!-- UNIFIED NAVIGATION -->
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
 <nav id="navbar">
-  <div class="logo">Yashwanth Reddy</div>
-  
-  <!-- Hamburger Icon (Hidden on Desktop) -->
+
+  <div class="logo">
+    Yashwanth Reddy
+  </div>
+
+  <!-- Hamburger Icon -->
   <div class="hamburger-icon" onclick="toggleMenu()">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <!-- Single Nav Links List -->
+  <!-- Navigation Links -->
   <ul class="nav-links">
-    <li><a href="#about" onclick="closeMenu()">About</a></li>
-    <li><a href="#education" onclick="closeMenu()">Education</a></li>
-    <li><a href="#experience" onclick="closeMenu()">Skills</a></li>
-    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-    <li><a href="#work-experience" onclick="closeMenu()">Experience</a></li>
-    <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
-    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+
+    <li>
+      <a href="#about" onclick="closeMenu()">About</a>
+    </li>
+
+    <li>
+      <a href="#education" onclick="closeMenu()">Education</a>
+    </li>
+
+    <li>
+      <a href="#experience" onclick="closeMenu()">Skills</a>
+    </li>
+
+    <li>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+    </li>
+
+    <li>
+      <a href="#work-experience" onclick="closeMenu()">Experience</a>
+    </li>
+
+    <li>
+      <a href="#certifications" onclick="closeMenu()">Certifications</a>
+    </li>
+
+    <li>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </li>
+
   </ul>
+
 </nav>
 
-  <!-- PROFILE SECTION -->
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="assets/bunny1.png" alt="Profile Picture of Yashwanth">
-    </div>
-    <div class="section__text">
-      <p>Hello, I'm</p>
-      <h1 class="title">Nagireddy Yashwanth Reddy</h1>
-      <p class="section__text__p2">Software Engineer Aspirant | Java Developer | AI Enthusiast</p>
-      <div class="btn-container">
-        <a href="./assets/Yashwanth_Nagireddy_Resume.pdf" download class="btn">
-  Download CV
-</a>
-        <a href="#contact" class="btn btn-color-1">Contact Info</a>
-      </div>
-      <div id="socials-container">
-        <img src="assets/linkedin.png" class="icon" alt="LinkedIn Profile" onclick="window.open('https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324', '_blank')">
-        <img src="assets/github.png" class="icon" alt="GitHub Profile" onclick="window.open('https://github.com/YashwanthNagireddy', '_blank')">
-      </div>
-    </div>
-  </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <img src="assets/bunny.png" class="about-pic" alt="About Yashwanth">
-      <div class="text-container">
+<!-- =========================================================
+     PROFILE SECTION
+     ========================================================= -->
+
+<section id="profile">
+
+  <div class="section__pic-container">
+
+    <img
+      src="assets/bunny1.png"
+      alt="Profile Picture of Nagireddy Yashwanth Reddy"
+    >
+
+  </div>
+
+  <div class="section__text">
+
+    <p>Hello, I'm</p>
+
+    <h1 class="title">
+      Nagireddy Yashwanth Reddy
+    </h1>
+
+    <p class="section__text__p2">
+      Software Engineer Aspirant | Java Developer | Backend Developer
+    </p>
+
+    <div class="btn-container">
+
+      <a
+        href="./assets/Yashwanth_Nagireddy_Resume.pdf"
+        download
+        class="btn"
+      >
+        Download CV
+      </a>
+
+      <a
+        href="#contact"
+        class="btn btn-color-1"
+      >
+        Contact Info
+      </a>
+
+    </div>
+
+    <div id="socials-container">
+
+      <img
+        src="assets/linkedin.png"
+        class="icon"
+        alt="LinkedIn Profile"
+        onclick="window.open(
+          'https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324',
+          '_blank'
+        )"
+      >
+
+      <img
+        src="assets/github.png"
+        class="icon"
+        alt="GitHub Profile"
+        onclick="window.open(
+          'https://github.com/YashwanthNagireddy',
+          '_blank'
+        )"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT SECTION
+     ========================================================= -->
+
+<section id="about">
+
+  <h1 class="title">
+    About Me
+  </h1>
+
+  <div class="section-container">
+
+    <img
+      src="assets/bunny.png"
+      class="about-pic"
+      alt="About Yashwanth Reddy"
+    >
+
+    <div class="text-container">
+
+      <p>
+        I am a final-year B.Tech Computer Science Engineering student
+        with a strong foundation in software development, programming
+        and computer science fundamentals. My primary programming
+        language is Java, with hands-on experience in Spring Boot,
+        REST APIs, Spring Security, JPA, Hibernate and MySQL.
+      </p>
+
+      <br>
+
+      <p>
+        I enjoy building backend applications, designing APIs,
+        working with databases, solving Data Structures and Algorithms
+        problems and exploring AI and data-related technologies.
+        I am currently focused on preparing for software engineering
+        opportunities and building production-oriented projects.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDUCATION SECTION
+     ========================================================= -->
+
+<section id="education">
+
+  <h1 class="title">
+    Education
+  </h1>
+
+  <div class="experience-details-container">
+
+    <div class="about-containers">
+
+      <div class="details-container">
+
+        <h2>
+          Bachelor of Technology
+        </h2>
+
         <p>
-          I am a B.Tech Computer Science Engineering student with a strong foundation in software development and programming concepts. My primary programming language is Java, and I also have knowledge of Python, C, C++, HTML, CSS, and JavaScript. I enjoy building applications, solving programming problems, and exploring AI-based technologies.
+          Computer Science Engineering
         </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- EDUCATION SECTION -->
-  <section id="education">
-    <h1 class="title">Education</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2>Bachelor of Technology</h2>
-          <p>Computer Science Engineering</p>
-          <p>ICFAI Foundation for Higher Education, Hyderabad</p>
-          <p><strong>CGPA:</strong> 7.76</p>
-          <p><strong>Expected Graduation:</strong> 2027</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <p>
+          ICFAI Foundation for Higher Education, Hyderabad
+        </p>
 
-  <!-- SKILLS SECTION -->
-  <section id="experience">
-    <h1 class="title">Technical Skills</h1>
-    <div class="experience-details-container">
-      <div class="skills-grid">
-        
-        <div class="details-container skill-card">
-          <div class="skill-icon">💻</div>
-          <h2>Programming Languages</h2>
-          <p>Java</p>
-          <p>Python</p>
-          <p>C</p>
-          <p>C++</p>
-        </div>
-        
-        <div class="details-container skill-card">
-          <div class="skill-icon">🌐</div>
-          <h2>Web Technologies</h2>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-        </div>
+        <p>
+          <strong>CGPA:</strong> 7.76
+        </p>
 
-        <div class="details-container skill-card">
-          <div class="skill-icon">🗄️</div>
-          <h2>Databases</h2>
-          <p>SQL</p>
-          <p>MySQL</p>
-          <p>MongoDB</p>
-        </div>
-
-        <div class="details-container skill-card">
-          <div class="skill-icon">🛠️</div>
-          <h2>Tools</h2>
-          <p>Git</p>
-          <p>GitHub</p>
-          <p>VS Code</p>
-          <p>IntelliJ IDEA</p>
-        </div>
-
-        <div class="details-container skill-card">
-          <div class="skill-icon">🧠</div>
-          <h2>Core Concepts</h2>
-          <p>Data Structures & Algorithms</p>
-          <p>Object-Oriented Programming</p>
-          <p>DBMS</p>
-          <p>Operating Systems</p>
-          <p>Computer Networks</p>
-        </div>
+        <p>
+          <strong>Expected Graduation:</strong> 2027
+        </p>
 
       </div>
+
     </div>
-  </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects">
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="project-grid">
-<!-- PROJECT 1: E-Commerce Backend API -->
-<div class="details-container color-container project-card">
-  <img src="assets/ecommerce.png" alt="E-Commerce Backend API" class="project-img">
+  </div>
 
-  <h2 class="project-title">E-Commerce Backend API</h2>
+</section>
 
-  <p class="project-desc">
-    A backend application that provides APIs for managing users, products, carts, and orders with secure authentication and database integration.
+
+<!-- =========================================================
+     TECHNICAL SKILLS SECTION
+     ========================================================= -->
+
+<section id="experience">
+
+  <h1 class="title">
+    Technical Skills
+  </h1>
+
+  <div class="experience-details-container">
+
+    <div class="skills-grid">
+
+
+      <!-- PROGRAMMING LANGUAGES -->
+
+      <div class="details-container skill-card">
+
+        <div class="skill-icon">
+          💻
+        </div>
+
+        <h2>
+          Programming Languages
+        </h2>
+
+        <p>Java</p>
+        <p>Python</p>
+        <p>C</p>
+        <p>C++</p>
+        <p>SQL</p>
+
+      </div>
+
+
+      <!-- BACKEND -->
+
+      <div class="details-container skill-card">
+
+        <div class="skill-icon">
+          ⚙️
+        </div>
+
+        <h2>
+          Backend Development
+        </h2>
+
+        <p>Spring Boot</p>
+        <p>Spring Security</p>
+        <p>REST APIs</p>
+        <p>JPA / Hibernate</p>
+        <p>JWT Authentication</p>
+
+      </div>
+
+
+      <!-- WEB -->
+
+      <div class="details-container skill-card">
+
+        <div class="skill-icon">
+          🌐
+        </div>
+
+        <h2>
+          Web Technologies
+        </h2>
+
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JavaScript</p>
+
+      </div>
+
+
+      <!-- DATABASE -->
+
+      <div class="details-container skill-card">
+
+        <div class="skill-icon">
+          🗄️
+        </div>
+
+        <h2>
+          Databases
+        </h2>
+
+        <p>MySQL</p>
+        <p>SQL</p>
+        <p>Relational Database Concepts</p>
+
+      </div>
+
+
+      <!-- TOOLS -->
+
+      <div class="details-container skill-card">
+
+        <div class="skill-icon">
+          🛠️
+        </div>
+
+        <h2>
+          Tools
+        </h2>
+
+        <p>Git</p>
+        <p>GitHub</p>
+        <p>VS Code</p>
+        <p>IntelliJ IDEA</p>
+        <p>MySQL Workbench</p>
+        <p>Swagger</p>
+
+      </div>
+
+
+      <!-- CORE CS -->
+
+      <div class="details-container skill-card">
+
+        <div class="skill-icon">
+          🧠
+        </div>
+
+        <h2>
+          Core Concepts
+        </h2>
+
+        <p>Data Structures & Algorithms</p>
+        <p>Object-Oriented Programming</p>
+        <p>DBMS</p>
+        <p>Operating Systems</p>
+        <p>Computer Networks</p>
+        <p>Software Engineering</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS SECTION
+     ========================================================= -->
+
+<section id="projects">
+
+  <h1 class="title">
+    Projects
+  </h1>
+
+  <div class="experience-details-container">
+
+    <div class="project-grid">
+
+
+      <!-- =====================================================
+           PROJECT 1 - E-COMMERCE BACKEND
+           ===================================================== -->
+
+      <div class="details-container color-container project-card">
+
+        <img
+          src="assets/ecommerce.png"
+          alt="E-Commerce Backend API"
+          class="project-img"
+        >
+
+        <h2 class="project-title">
+          E-Commerce Backend API
+        </h2>
+
+        <p class="project-desc">
+
+          A secure backend application providing REST APIs for
+          users, products, categories, carts and orders with
+          authentication, authorization, database integration
+          and API testing.
+
+        </p>
+
+
+        <div class="project-features">
+
+          <h3 class="feature-title">
+            Key Features:
+          </h3>
+
+          <ul class="feature-list">
+
+            <li>
+              JWT-based user authentication
+            </li>
+
+            <li>
+              Role-based authorization using Spring Security
+            </li>
+
+            <li>
+              User, product and category management
+            </li>
+
+            <li>
+              Shopping cart and order management
+            </li>
+
+            <li>
+              RESTful CRUD APIs
+            </li>
+
+            <li>
+              MySQL database integration
+            </li>
+
+            <li>
+              Request validation and exception handling
+            </li>
+
+            <li>
+              API testing and debugging using Swagger
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="project-tech">
+
+          <h3 class="feature-title">
+            Technologies Used:
+          </h3>
+
+          <div class="tech-badges">
+
+            <span class="tech-chip">
+              Java
+            </span>
+
+            <span class="tech-chip">
+              Spring Boot
+            </span>
+
+            <span class="tech-chip">
+              Spring Security
+            </span>
+
+            <span class="tech-chip">
+              Spring Data JPA
+            </span>
+
+            <span class="tech-chip">
+              Hibernate
+            </span>
+
+            <span class="tech-chip">
+              REST API
+            </span>
+
+            <span class="tech-chip">
+              JWT
+            </span>
+
+            <span class="tech-chip">
+              MySQL
+            </span>
+
+            <span class="tech-chip">
+              SQL
+            </span>
+
+            <span class="tech-chip">
+              Swagger / OpenAPI
+            </span>
+
+            <span class="tech-chip">
+              Maven
+            </span>
+
+            <span class="tech-chip">
+              Git
+            </span>
+
+            <span class="tech-chip">
+              GitHub
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-btn-container">
+
+          <a
+            href="https://github.com/YashwanthNagireddy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-color-2 btn-small"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           PROJECT 2 - DRIVER DROWSINESS
+           ===================================================== -->
+
+      <div class="details-container color-container project-card">
+
+        <img
+          src="assets/drowsiness.png"
+          alt="Driver Drowsiness Detection System"
+          class="project-img"
+        >
+
+        <h2 class="project-title">
+          Driver Drowsiness Detection System
+        </h2>
+
+        <p class="project-desc">
+
+          A computer vision-based application that monitors
+          driver fatigue in real time and generates alerts
+          when signs of drowsiness are detected.
+
+        </p>
+
+
+        <div class="project-features">
+
+          <h3 class="feature-title">
+            Key Features:
+          </h3>
+
+          <ul class="feature-list">
+
+            <li>
+              Real-time video monitoring
+            </li>
+
+            <li>
+              Face detection
+            </li>
+
+            <li>
+              Eye detection and monitoring
+            </li>
+
+            <li>
+              Drowsiness detection
+            </li>
+
+            <li>
+              Audio alert system
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="project-tech">
+
+          <h3 class="feature-title">
+            Technologies Used:
+          </h3>
+
+          <div class="tech-badges">
+
+            <span class="tech-chip">
+              Java
+            </span>
+
+            <span class="tech-chip">
+              OpenCV
+            </span>
+
+            <span class="tech-chip">
+              Computer Vision
+            </span>
+
+            <span class="tech-chip">
+              Image Processing
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-btn-container">
+
+          <a
+            href="https://github.com/YashwanthNagireddy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-color-2 btn-small"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           PROJECT 3 - STUDENT MANAGEMENT
+           ===================================================== -->
+
+      <div class="details-container color-container project-card">
+
+        <img
+          src="assets/project-1.png"
+          alt="Student Management System"
+          class="project-img"
+        >
+
+        <h2 class="project-title">
+          Student Management System
+        </h2>
+
+        <p class="project-desc">
+
+          A desktop application for managing student records
+          with database integration and complete CRUD functionality.
+
+        </p>
+
+
+        <div class="project-features">
+
+          <h3 class="feature-title">
+            Key Features:
+          </h3>
+
+          <ul class="feature-list">
+
+            <li>
+              Create student records
+            </li>
+
+            <li>
+              Read and search student records
+            </li>
+
+            <li>
+              Update student information
+            </li>
+
+            <li>
+              Delete student records
+            </li>
+
+            <li>
+              MySQL database connectivity
+            </li>
+
+            <li>
+              User-friendly desktop interface
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="project-tech">
+
+          <h3 class="feature-title">
+            Technologies Used:
+          </h3>
+
+          <div class="tech-badges">
+
+            <span class="tech-chip">
+              Python
+            </span>
+
+            <span class="tech-chip">
+              Tkinter
+            </span>
+
+            <span class="tech-chip">
+              MySQL
+            </span>
+
+            <span class="tech-chip">
+              SQL
+            </span>
+
+            <span class="tech-chip">
+              CRUD
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-btn-container">
+
+          <a
+            href="https://github.com/YashwanthNagireddy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-color-2 btn-small"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           PROJECT 4 - WALL CALENDAR
+           ===================================================== -->
+
+      <div class="details-container color-container project-card">
+
+        <img
+          src="assets/wall.png"
+          alt="Interactive Wall Calendar"
+          class="project-img"
+        >
+
+        <h2 class="project-title">
+          Interactive Wall Calendar
+        </h2>
+
+        <p class="project-desc">
+
+          A responsive interactive calendar application with
+          dynamic navigation, modern UI and cross-device support.
+
+        </p>
+
+
+        <div class="project-features">
+
+          <h3 class="feature-title">
+            Key Features:
+          </h3>
+
+          <ul class="feature-list">
+
+            <li>
+              Dynamic monthly calendar view
+            </li>
+
+            <li>
+              Previous and next month navigation
+            </li>
+
+            <li>
+              Responsive cross-device interface
+            </li>
+
+            <li>
+              Interactive user experience
+            </li>
+
+            <li>
+              Modern component-based UI
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="project-tech">
+
+          <h3 class="feature-title">
+            Technologies Used:
+          </h3>
+
+          <div class="tech-badges">
+
+            <span class="tech-chip">
+              React.js
+            </span>
+
+            <span class="tech-chip">
+              Next.js
+            </span>
+
+            <span class="tech-chip">
+              JavaScript
+            </span>
+
+            <span class="tech-chip">
+              HTML5
+            </span>
+
+            <span class="tech-chip">
+              CSS3
+            </span>
+
+            <span class="tech-chip">
+              Tailwind CSS
+            </span>
+
+            <span class="tech-chip">
+              Vercel
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-btn-container">
+
+          <a
+            href="https://github.com/YashwanthNagireddy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-color-2 btn-small"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://wall-calendar-bg1pqvqna-yashwanthnagireddy12-6118s-projects.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-color-1 btn-small"
+          >
+            Live Demo
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE SECTION
+     ========================================================= -->
+
+<section id="work-experience">
+
+  <h1 class="title">
+    Experience
+  </h1>
+
+  <div class="experience-details-container">
+
+    <div class="experience-grid single-card-center">
+
+      <div class="details-container exp-card">
+
+        <h2 class="exp-title">
+          AI Developer Intern
+        </h2>
+
+        <h3 class="exp-company">
+          VISWAM.AI | Hyderabad
+        </h3>
+
+        <p class="exp-date">
+          2025
+        </p>
+
+        <ul class="feature-list text-left mt-15">
+
+          <li>
+            Worked on AI-focused software development projects.
+          </li>
+
+          <li>
+            Contributed to application development and data
+            processing tasks.
+          </li>
+
+          <li>
+            Worked on projects including BharatVerse, HireSage,
+            Edi-Emiti and Indic Corpus Data Collection.
+          </li>
+
+          <li>
+            Collaborated with team members to understand requirements
+            and implement project tasks.
+          </li>
+
+        </ul>
+
+
+        <div style="margin-top: 15px;">
+
+          <a
+            href="./assets/viswamintern.pdf"
+            target="_blank"
+            class="btn btn-color-2 btn-small cert-btn"
+          >
+            View Certificate
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CERTIFICATIONS SECTION
+     ========================================================= -->
+
+<section id="certifications">
+
+  <h1 class="title">
+    Certifications & Learning
+  </h1>
+
+  <div class="experience-details-container">
+
+    <div class="cert-grid">
+
+
+      <!-- AWS -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          ☁️
+        </div>
+
+        <h2 class="cert-title">
+          AWS Certified Cloud Practitioner
+        </h2>
+
+        <p class="issuer">
+          Amazon Web Services
+        </p>
+
+        <a
+          href="./assets/aws%20certification.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- SQL -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          🗄️
+        </div>
+
+        <h2 class="cert-title">
+          SQL Certification
+        </h2>
+
+        <p class="issuer">
+          SQL
+        </p>
+
+        <!--
+          Rename your SQL certificate file to:
+          sql-certification.pdf
+        -->
+
+        <a
+          href="./assets/sql-certification.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- IBM DATA FUNDAMENTALS -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          📊
+        </div>
+
+        <h2 class="cert-title">
+          Data Fundamentals
+        </h2>
+
+        <p class="issuer">
+          IBM
+        </p>
+
+        <!--
+          Rename your certificate file to:
+          ibm-data-fundamentals.pdf
+        -->
+
+        <a
+          href="./assets/ibm-data-fundamentals.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- MICROSOFT LEARN DATA -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          📈
+        </div>
+
+        <h2 class="cert-title">
+          Data Learning
+        </h2>
+
+        <p class="issuer">
+          Microsoft Learn
+        </p>
+
+        <!--
+          Rename your Microsoft Learn certificate/completion
+          file to:
+          microsoft-learn-data.pdf
+        -->
+
+        <a
+          href="./assets/microsoft-learn-data.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- AI-900 -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          🤖
+        </div>
+
+        <h2 class="cert-title">
+          Microsoft Azure AI Fundamentals
+        </h2>
+
+        <p class="issuer">
+          Microsoft | AI-900
+        </p>
+
+        <!--
+          Rename your AI-900 certificate file to:
+          microsoft-ai-900.pdf
+        -->
+
+        <a
+          href="./assets/microsoft-ai-900.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- NASSCOM - ACQUIRING DATA -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          📚
+        </div>
+
+        <h2 class="cert-title">
+          Acquiring Data
+        </h2>
+
+        <p class="issuer">
+          NASSCOM
+        </p>
+
+        <a
+          href="./assets/ad.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- NASSCOM - EDA -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          📊
+        </div>
+
+        <h2 class="cert-title">
+          Exploratory Data Analysis
+        </h2>
+
+        <p class="issuer">
+          NASSCOM
+        </p>
+
+        <a
+          href="./assets/eda.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- NASSCOM - DATA PROCESSING -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          📉
+        </div>
+
+        <h2 class="cert-title">
+          Data Processing & Visualization
+        </h2>
+
+        <p class="issuer">
+          NASSCOM
+        </p>
+
+        <a
+          href="./assets/dpa.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT SECTION
+     ========================================================= -->
+
+<section id="contact">
+
+  <h1 class="title">
+    Contact Me
+  </h1>
+
+  <div class="contact-info-upper-container">
+
+
+    <div class="contact-info-container">
+
+      <img
+        src="assets/email.png"
+        class="icon contact-icon email-icon"
+        alt="Email Icon"
+      >
+
+      <p>
+        <a href="mailto:yashwanthnagireddy12@gmail.com">
+          yashwanthnagireddy12@gmail.com
+        </a>
+      </p>
+
+    </div>
+
+
+    <div class="contact-info-container">
+
+      <img
+        src="assets/linkedin.png"
+        class="icon contact-icon"
+        alt="LinkedIn Icon"
+      >
+
+      <p>
+        <a
+          href="https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </p>
+
+    </div>
+
+
+    <div class="contact-info-container">
+
+      <img
+        src="assets/github.png"
+        class="icon contact-icon"
+        alt="GitHub Icon"
+      >
+
+      <p>
+        <a
+          href="https://github.com/YashwanthNagireddy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+  <p>
+    © 2026 Nagireddy Yashwanth Reddy. All Rights Reserved.
   </p>
 
-  <div class="project-features">
-    <h3 class="feature-title">Key Features:</h3>
-    <ul class="feature-list">
-      <li>User authentication and authorization</li>
-      <li>Product and order management</li>
-      <li>Database-driven REST API operations</li>
-      <li>Secure user data handling</li>
-    </ul>
-  </div>
+</footer>
 
-  <div class="project-tech">
-    <h3 class="feature-title">Technologies Used:</h3>
-    <div class="tech-badges">
-      <span class="tech-chip tech-java">Java</span>
-      <span class="tech-chip">Spring Boot</span>
-      <span class="tech-chip">MySQL</span>
-      <span class="tech-chip">REST API</span>
-      <span class="tech-chip">JWT</span>
-    </div>
-  </div>
 
-  <div class="project-btn-container">
-    <a href="https://github.com/YashwanthNagireddy" target="_blank" class="btn btn-color-2 btn-small">
-      GitHub
-    </a>
-  </div>
-</div>
-        <!-- PROJECT 1: Driver Drowsiness Detection -->
-        <div class="details-container color-container project-card">
-          <img src="assets/drowsiness.png" alt="Driver Drowsiness Detection System" class="project-img">
-          <h2 class="project-title">Driver Drowsiness Detection System</h2>
-          <p class="project-desc">
-            A computer vision-based application that detects driver fatigue in real time and provides audio alerts to improve road safety.
-          </p>
-          
-          <div class="project-features">
-            <h3 class="feature-title">Key Features:</h3>
-            <ul class="feature-list">
-              <li>Real-time video monitoring</li>
-              <li>Face and eye detection</li>
-              <li>Audio alert system</li>
-            </ul>
-          </div>
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
 
-          <div class="project-tech">
-            <h3 class="feature-title">Technologies Used:</h3>
-            <div class="tech-badges">
-              <span class="tech-chip tech-java">Java</span>
-              <span class="tech-chip tech-opencv">OpenCV</span>
-            </div>
-          </div>
-
-          <div class="project-btn-container">
-            <a href="https://github.com/YashwanthNagireddy" target="_blank" class="btn btn-color-2 btn-small">GitHub</a>
-          </div>
-        </div>
-
-        <!-- PROJECT 2: Student Management System -->
-        <div class="details-container color-container project-card">
-          <img src="assets/project-1.png" alt="Student Management System" class="project-img">
-          <h2 class="project-title">Student Management System</h2>
-          <p class="project-desc">
-            A desktop application that manages student records efficiently with database integration and CRUD operations.
-          </p>
-          
-          <div class="project-features">
-            <h3 class="feature-title">Key Features:</h3>
-            <ul class="feature-list">
-              <li>Create, Read, Update, Delete operations</li>
-              <li>Database connectivity</li>
-              <li>User-friendly interface</li>
-            </ul>
-          </div>
-
-          <div class="project-tech">
-            <h3 class="feature-title">Technologies Used:</h3>
-            <div class="tech-badges">
-              <span class="tech-chip tech-python">Python</span>
-              <span class="tech-chip tech-tkinter">Tkinter</span>
-              <span class="tech-chip tech-mysql">MySQL</span>
-            </div>
-          </div>
-
-          <div class="project-btn-container">
-            <a href="https://github.com/YashwanthNagireddy" target="_blank" class="btn btn-color-2 btn-small">GitHub</a>
-          </div>
-        </div>
-        
-        <!-- PROJECT 3: Interactive Wall Calendar -->
-        <div class="details-container color-container project-card">
-          <img src="assets/wall.png" alt="Interactive Wall Calendar" class="project-img">
-          <h2 class="project-title">Interactive Wall Calendar</h2>
-          <p class="project-desc">
-            A responsive interactive calendar application with modern UI and smooth user experience.
-          </p>
-          
-          <div class="project-features">
-            <h3 class="feature-title">Key Features:</h3>
-            <ul class="feature-list">
-              <li>Interactive dynamic monthly view</li>
-              <li>Optimized previous/next navigation</li>
-              <li>Responsive cross-device UI</li>
-            </ul>
-          </div>
-
-          <div class="project-tech">
-            <h3 class="feature-title">Technologies Used:</h3>
-            <div class="tech-badges">
-              <span class="tech-chip tech-react">React.js</span>
-              <span class="tech-chip tech-nextjs">Next.js</span>
-              <span class="tech-chip tech-tailwind">Tailwind CSS</span>
-              <span class="tech-chip tech-js">JavaScript</span>
-            </div>
-          </div>
-
-          <div class="project-btn-container">
-            <a href="https://github.com/YashwanthNagireddy" target="_blank" class="btn btn-color-2 btn-small">GitHub</a>
-            <a href="https://wall-calendar-bg1pqvqna-yashwanthnagireddy12-6118s-projects.vercel.app/" target="_blank" class="btn btn-color-1 btn-small">Live Demo</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE SECTION -->
-  <section id="work-experience">
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="experience-grid single-card-center">
-        
-        <div class="details-container exp-card">
-          <h2 class="exp-title">AI Developer Intern</h2>
-          <h3 class="exp-company">VISWAM.AI | Hyderabad</h3>
-          <p class="exp-date">2025</p>
-          <ul class="feature-list text-left mt-15">
-            <li>Worked on AI-based software solutions.</li>
-            <li>Contributed to application development and data processing tasks.</li>
-            <li>Improved understanding of AI applications and software development practices.</li>
-          </ul>
-          <!-- Updated relative path for the new Viswam intern certificate -->
-          <div style="margin-top: 15px;">
-            <a href="./assets/viswamintern.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS SECTION -->
-  <section id="certifications">
-    <h1 class="title">Certifications</h1>
-    <div class="experience-details-container">
-      <div class="cert-grid">
-        
-        <div class="details-container cert-card">
-          <div class="cert-icon">☁️</div>
-          <h2 class="cert-title">AWS Certified Cloud Practitioner</h2>
-          <p class="issuer">Amazon Web Services</p>
-          <!-- Fixed relative path and URL-encoded space -->
-          <a href="./assets/aws%20certification.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
-        </div>
-
-        <div class="details-container cert-card">
-          <div class="cert-icon">📊</div>
-          <h2 class="cert-title">NASSCOM – Acquiring Data</h2>
-          <p class="issuer">NASSCOM</p>
-          <!-- Fixed relative path -->
-          <a href="./assets/ad.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
-        </div>
-
-        <div class="details-container cert-card">
-          <div class="cert-icon">📈</div>
-          <h2 class="cert-title">NASSCOM – Exploratory Data Analysis</h2>
-          <p class="issuer">NASSCOM</p>
-          <!-- Fixed relative path -->
-          <a href="./assets/eda.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
-        </div>
-
-        <div class="details-container cert-card">
-          <div class="cert-icon">📉</div>
-          <h2 class="cert-title">NASSCOM – Data Processing and Visualization</h2>
-          <p class="issuer">NASSCOM</p>
-          <!-- Fixed relative path -->
-          <a href="./assets/dpa.pdf" target="_blank" class="btn btn-color-2 btn-small cert-btn">View Certificate</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact">
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      
-      <div class="contact-info-container">
-        <img src="assets/email.png" class="icon contact-icon email-icon" alt="Email Icon">
-        <p><a href="mailto:yashwanthnagireddy12@gmail.com">yashwanthnagireddy12@gmail.com</a></p>
-      </div>
-
-      <div class="contact-info-container">
-        <img src="assets/linkedin.png" class="icon contact-icon" alt="LinkedIn Icon">
-        <p><a href="https://www.linkedin.com/in/yashwanth-nagireddy-aa9780324" target="_blank">LinkedIn</a></p>
-      </div>
-
-      <div class="contact-info-container">
-        <img src="assets/github.png" class="icon contact-icon" alt="GitHub Icon">
-        <p><a href="https://github.com/YashwanthNagireddy" target="_blank">GitHub</a></p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Nagireddy Yashwanth Reddy. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
