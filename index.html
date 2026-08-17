@@ -13,7 +13,7 @@
 
   <meta
     name="keywords"
-    content="Yashwanth Reddy, Java Developer, Spring Boot, Backend Developer, Software Engineer, MySQL, REST API, AI"
+    content="Yashwanth Reddy, Java Developer, Spring Boot, Backend Developer, Software Engineer, MySQL, MongoDB, REST API, AI"
   >
 
   <meta name="author" content="Nagireddy Yashwanth Reddy">
@@ -24,7 +24,7 @@
   <style>
 
     /* ======================================================
-       SKILLS / BUTTONS
+       SKILLS
        ====================================================== */
 
     .skills-grid {
@@ -38,6 +38,14 @@
       flex: 1;
       min-width: 200px;
     }
+
+    .skill-card p {
+      margin: 0.35rem 0;
+    }
+
+    /* ======================================================
+       BUTTONS
+       ====================================================== */
 
     a.btn {
       text-decoration: none;
@@ -103,66 +111,16 @@
 
     .cert-title {
       margin-bottom: 0.5rem;
+      text-align: center;
     }
 
     .issuer {
       margin-bottom: 1rem;
+      text-align: center;
     }
 
     .cert-btn {
       margin-top: auto;
-    }
-
-    /* ======================================================
-       MICROSOFT LEARN ACHIEVEMENTS
-       ====================================================== */
-
-    .learning-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-    }
-
-    .learning-card {
-      text-align: left;
-    }
-
-    .learning-card h2 {
-      margin-bottom: 0.8rem;
-    }
-
-    .learning-card ul {
-      margin-top: 1rem;
-      padding-left: 1.4rem;
-      line-height: 1.7;
-    }
-
-    .learning-stats {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin: 1.2rem 0;
-    }
-
-    .learning-stat {
-      padding: 0.55rem 1rem;
-      border-radius: 20px;
-      border: 1px solid #d6d6d6;
-      background: #f7f7f7;
-      font-weight: 600;
-    }
-
-    .learning-topic {
-      margin-bottom: 0.5rem;
-    }
-
-    /* ======================================================
-       SKILLS
-       ====================================================== */
-
-    .skill-card p {
-      margin: 0.35rem 0;
     }
 
     /* ======================================================
@@ -179,38 +137,25 @@
     }
 
     /* ======================================================
-       RESPONSIVE
+       RESPONSIVE CERTIFICATIONS
        ====================================================== */
 
     @media screen and (max-width: 1000px) {
-
       .cert-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-
-      .learning-grid {
-        grid-template-columns: 1fr;
-      }
-
     }
 
     @media screen and (max-width: 600px) {
-
       .cert-grid {
         grid-template-columns: 1fr;
       }
-
-      .learning-grid {
-        grid-template-columns: 1fr;
-      }
-
     }
 
   </style>
 </head>
 
 <body>
-
 
 <!-- =========================================================
      NAVIGATION
@@ -255,10 +200,6 @@
     </li>
 
     <li>
-      <a href="#learning" onclick="closeMenu()">Microsoft Learn</a>
-    </li>
-
-    <li>
       <a href="#contact" onclick="closeMenu()">Contact</a>
     </li>
 
@@ -298,7 +239,7 @@
 
       <a
         href="./assets/NAGIREDDY%20YASHWANTH%20REDDY%20RESUME.pdf"
-        download
+        target="_blank"
         class="btn"
       >
         Download CV
@@ -625,34 +566,13 @@
           <ul class="feature-list">
 
             <li>JWT-based user authentication</li>
-
-            <li>
-              Role-based authorization using Spring Security
-            </li>
-
-            <li>
-              User, product and category management
-            </li>
-
-            <li>
-              Shopping cart and order management
-            </li>
-
-            <li>
-              RESTful CRUD APIs
-            </li>
-
-            <li>
-              MySQL database integration
-            </li>
-
-            <li>
-              Request validation and exception handling
-            </li>
-
-            <li>
-              API testing and debugging using Swagger
-            </li>
+            <li>Role-based authorization using Spring Security</li>
+            <li>User, product and category management</li>
+            <li>Shopping cart and order management</li>
+            <li>RESTful CRUD APIs</li>
+            <li>MySQL database integration</li>
+            <li>Request validation and exception handling</li>
+            <li>API testing and debugging using Swagger</li>
 
           </ul>
 
@@ -1024,7 +944,9 @@
     <div class="cert-grid">
 
 
-      <!-- AWS -->
+      <!-- =====================================================
+           AWS
+           ===================================================== -->
 
       <div class="details-container cert-card">
 
@@ -1051,34 +973,9 @@
       </div>
 
 
-      <!-- SQL -->
-
-      <div class="details-container cert-card">
-
-        <div class="cert-icon">
-          🗄️
-        </div>
-
-        <h2 class="cert-title">
-          SQL Basic
-        </h2>
-
-        <p class="issuer">
-          SQL
-        </p>
-
-        <a
-          href="./assets/sql_basic%20certificate.pdf"
-          target="_blank"
-          class="btn btn-color-2 btn-small cert-btn"
-        >
-          View Certificate
-        </a>
-
-      </div>
-
-
-      <!-- IBM DATA FUNDAMENTALS -->
+      <!-- =====================================================
+           IBM DATA FUNDAMENTALS
+           ===================================================== -->
 
       <div class="details-container cert-card">
 
@@ -1105,7 +1002,9 @@
       </div>
 
 
-      <!-- MONGODB -->
+      <!-- =====================================================
+           MONGODB
+           ===================================================== -->
 
       <div class="details-container cert-card">
 
@@ -1132,7 +1031,38 @@
       </div>
 
 
-      <!-- NASSCOM - ACQUIRING DATA -->
+      <!-- =====================================================
+           SQL BASIC
+           ===================================================== -->
+
+      <div class="details-container cert-card">
+
+        <div class="cert-icon">
+          🗄️
+        </div>
+
+        <h2 class="cert-title">
+          SQL Basic
+        </h2>
+
+        <p class="issuer">
+          SQL
+        </p>
+
+        <a
+          href="./assets/sql_basic%20certificate.pdf"
+          target="_blank"
+          class="btn btn-color-2 btn-small cert-btn"
+        >
+          View Certificate
+        </a>
+
+      </div>
+
+
+      <!-- =====================================================
+           NASSCOM - ACQUIRING DATA
+           ===================================================== -->
 
       <div class="details-container cert-card">
 
@@ -1159,7 +1089,9 @@
       </div>
 
 
-      <!-- NASSCOM - EDA -->
+      <!-- =====================================================
+           NASSCOM - EDA
+           ===================================================== -->
 
       <div class="details-container cert-card">
 
@@ -1186,7 +1118,9 @@
       </div>
 
 
-      <!-- NASSCOM - DATA PROCESSING -->
+      <!-- =====================================================
+           NASSCOM - DATA PROCESSING
+           ===================================================== -->
 
       <div class="details-container cert-card">
 
@@ -1212,202 +1146,6 @@
 
       </div>
 
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     MICROSOFT LEARN ACHIEVEMENTS
-     ========================================================= -->
-
-<section id="learning">
-
-  <h1 class="title">
-    Microsoft Learn Achievements
-  </h1>
-
-  <div class="experience-details-container">
-
-    <div class="learning-grid">
-
-
-      <!-- OVERVIEW -->
-
-      <div class="details-container learning-card">
-
-        <div class="cert-icon">
-          📘
-        </div>
-
-        <h2>
-          Microsoft Learn — Data & Analytics
-        </h2>
-
-        <p>
-          Completed Microsoft Learn learning modules focused on
-          Power BI, Microsoft Fabric, data preparation,
-          analytics and data visualization.
-        </p>
-
-        <div class="learning-stats">
-
-          <span class="learning-stat">
-            🏆 8 Trophies
-          </span>
-
-          <span class="learning-stat">
-            🎖️ 35 Badges
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <!-- POWER BI -->
-
-      <div class="details-container learning-card">
-
-        <div class="cert-icon">
-          📊
-        </div>
-
-        <h2>
-          Power BI & Data Analytics
-        </h2>
-
-        <ul>
-
-          <li class="learning-topic">
-            Prepare and visualize data with Microsoft Power BI
-          </li>
-
-          <li class="learning-topic">
-            Design Power BI reports
-          </li>
-
-          <li class="learning-topic">
-            Configure a semantic model
-          </li>
-
-          <li class="learning-topic">
-            Clean, transform, and load data in Power BI
-          </li>
-
-          <li class="learning-topic">
-            Get data in Power BI
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- MICROSOFT FABRIC -->
-
-      <div class="details-container learning-card">
-
-        <div class="cert-icon">
-          🔷
-        </div>
-
-        <h2>
-          Microsoft Fabric
-        </h2>
-
-        <ul>
-
-          <li class="learning-topic">
-            Introduction to end-to-end analytics using Microsoft Fabric
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- COPILOT -->
-
-      <div class="details-container learning-card">
-
-        <div class="cert-icon">
-          🤖
-        </div>
-
-        <h2>
-          Copilot in Power BI
-        </h2>
-
-        <ul>
-
-          <li class="learning-topic">
-            Get started with Copilot in Power BI
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- POWER BI DEVELOPMENT -->
-
-      <div class="details-container learning-card">
-
-        <div class="cert-icon">
-          📈
-        </div>
-
-        <h2>
-          Power BI Development
-        </h2>
-
-        <ul>
-
-          <li class="learning-topic">
-            Get started building with Power BI
-          </li>
-
-          <li class="learning-topic">
-            Data acquisition and preparation
-          </li>
-
-          <li class="learning-topic">
-            Data visualization and reporting
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- LEARNING NOTE -->
-
-      <div class="details-container learning-card">
-
-        <div class="cert-icon">
-          🎓
-        </div>
-
-        <h2>
-          Microsoft Learn Profile
-        </h2>
-
-        <p>
-          These achievements represent learning activity completed
-          through Microsoft Learn in the areas of data analytics,
-          Power BI and Microsoft Fabric.
-        </p>
-
-        <p style="margin-top: 1rem;">
-          <strong>Note:</strong>
-          Microsoft Learn achievements and badges are listed
-          separately from professional certifications.
-        </p>
-
-      </div>
 
     </div>
 
